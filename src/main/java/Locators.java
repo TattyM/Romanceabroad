@@ -41,5 +41,7 @@ public class Locators {
     public static final By LINK_TEXT_FIELD = By.cssSelector("input#search_product");
     public static final By BUTTON_SEARCH_GIFT = By.cssSelector("#search_friend");
 
-
+    // ConditionsTestsExtended
+    public static final By LINK_LOOP = By.xpath("//ul/li");
+    public static final By LINK_LOOP_HEADER = By.xpath("//ul[@class='navbar-nav']/li");
 }
