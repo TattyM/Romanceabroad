@@ -1,3 +1,5 @@
+import org.openqa.selenium.By;
+
 public class Data {
 
     //JoinToday
@@ -25,5 +27,8 @@ public class Data {
     //Gifts Search Page
     public static final String expectedUrlGiftsSearch ="https://romanceabroad.com/media/index";
     public static final String inputsearch = "Teddy";
+
+    //ConditionsArrayListsTestsLoopsExtended
+    public static final By tagName = By.tagName("a");
 }
 

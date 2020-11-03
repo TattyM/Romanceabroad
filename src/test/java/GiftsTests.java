@@ -1,6 +1,6 @@
 import org.testng.annotations.Test;
 
-public class GiftsSearchTests extends BaseUI {
+public class GiftsTests extends BaseUI {
 
 
     @Test

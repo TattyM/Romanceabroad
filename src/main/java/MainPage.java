@@ -2,6 +2,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
@@ -36,15 +37,15 @@ public class MainPage extends BaseActions {
         driver.findElement(Locators.SELECT_YEAR_NUMBER).click();
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.TEXT_PHONE)));
         driver.findElement(Locators.TEXT_PHONE).sendKeys(Data.phone);
-        WebElement checkboxConfirmation = driver.findElement(Locators.CHECKBOX_CONFIRM);
-        boolean selectedCheckbox = checkboxConfirmation.isSelected();
-        System.out.println(selectedCheckbox + " ALL SET!");
-        checkboxConfirmation.click();
+
     }
 
     public void clickGiftsPageLink() {
         WebElement pageGifts = driver.findElement(Locators.LINK_GIFTS);
         pageGifts.click();
+        String currentUrlGifts = driver.getCurrentUrl();
+        System.out.println(currentUrlGifts);
+        Assert.assertEquals(currentUrlGifts, Data.expectedUrlGifts);
 
     }
 

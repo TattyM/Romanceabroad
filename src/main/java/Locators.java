@@ -34,14 +34,17 @@ public class Locators {
 
     //Gifts Page
     public static final By LINK_GIFTS = By.xpath("//a[text()='GIFTS']");
-    public static final By BUTTON_QUICK_VIEW = By.xpath("//div[@id='product_quick_view_11']//input");
-
-    // Gifts Search Page
     public static final By LINK_ICON_GIFTS = By.xpath("//a[contains(text(),'Gifts')]");
     public static final By LINK_TEXT_FIELD = By.cssSelector("input#search_product");
     public static final By BUTTON_SEARCH_GIFT = By.cssSelector("#search_friend");
 
-    // ConditionsTestsExtended
-    public static final By LINK_LOOP = By.xpath("//ul/li");
-    public static final By LINK_LOOP_HEADER = By.xpath("//ul[@class='navbar-nav']/li");
+    // ConditionsArrayListsLoopsTestsExtended
+    public static final By LINK_TOUR_TO = By.xpath("//li//a[@href='https://romanceabroad.com/store/sweets/20-tour_to_ukraine']");
+    public static final By LINK_FRUITS = By.xpath("//a[@href='https://romanceabroad.com/store/sweets/3-chocolate_and_fruits_in_one_basket']");
+    public static final By BLOCK_PRODUCT = By.xpath("//div[@id='result_products_block']");
+    public static final By BLOCK_LIST = By.xpath("//ul[@class='nav nav-pills nav-stacked content-pages-tree']/li");
+    public static final By BLOCK_FOOTER = By.xpath("//ul[@class='footer-menu-list-block list-group']//li");
+    public static final By TEXT_DESCRIPTION = By.xpath("//div[contains(text(),'Amazing mix chocolate and fruits in one basket for')]");
+
+
 }
