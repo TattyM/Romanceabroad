@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
@@ -14,11 +15,9 @@ public class ConditionsArrayListsTestsLoopsExtended extends BaseUI {
     public void test1() {       //ConditionsWebElements1
         Assert.assertTrue(driver.findElement(Locators.LINK_TOUR_TO).isDisplayed(), "Link is not displayed!");
         WebElement pageTourTo = driver.findElement(Locators.LINK_TOUR_TO);
-        if (pageTourTo.getText().contains("TOUR TO UKRAINE")) {
+        if (pageTourTo.getText().contains("TOUR TO UKRAINE") || pageTourTo.isDisplayed()) {
             pageTourTo.click();
             System.out.println("We can see the page!");
-        } else if (pageTourTo.isDisplayed()) {
-            System.out.println("Page is displayed!");
         } else {
             Assert.fail("!!!!!!");
         }
@@ -54,7 +53,7 @@ public class ConditionsArrayListsTestsLoopsExtended extends BaseUI {
         for (WebElement mainCurrentLinks : mainLinks) {
             String mainLinkText = mainCurrentLinks.getText();
             System.out.println(mainLinkText);
-            softAssert.fail("Don't see links!");
+
         }
     }
 
@@ -85,6 +84,8 @@ public class ConditionsArrayListsTestsLoopsExtended extends BaseUI {
         for (int i = 0; i < links.size(); i++) {
             String categories = links.get(i).getText();
             System.out.println(categories);
+
+
         }
     }
 }

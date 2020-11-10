@@ -10,8 +10,11 @@ public class JoinTodayTests extends BaseUI {
         mainPage.firstPartOfRegistration();
         mainPage.secondPartOfRegistration();
         WebElement checkboxConfirmation = driver.findElement(Locators.CHECKBOX_CONFIRM);
-        Assert.assertTrue(!driver.findElement(Locators.LINK_JOIN_TODAY).isSelected(),"Check box does not selected!");
+        if (!driver.findElement(Locators.LINK_JOIN_TODAY).isSelected()){
         checkboxConfirmation.click();
+        }else{
+            Assert.fail("Checkbox is selected!");
+        }
     }
 }
 

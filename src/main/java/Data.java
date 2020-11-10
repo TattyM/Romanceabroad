@@ -17,18 +17,30 @@ public class Data {
     //PhotosPage
     public static final String expectedUrlPhotos = "https://romanceabroad.com/media/index";
 
+
     //BlogPage
     public static final String expectedUrlBlog = "https://romanceabroad.com/content/view/blog";
 
     //Gifts Page
     public static final String currentUrlGifts = "https://romanceabroad.com/store/category-sweets";
-    public static final String expectedUrlGifts = "https://romanceabroad.com/store/category-sweets";
+
 
     //Gifts Search Page
-    public static final String expectedUrlGiftsSearch ="https://romanceabroad.com/media/index";
+    public static final String expectedUrlGiftsSearch = "https://romanceabroad.com/media/index";
     public static final String inputsearch = "Teddy";
 
     //ConditionsArrayListsTestsLoopsExtended
     public static final By tagName = By.tagName("a");
+
+    //ArrayListsConditionsInLoopsTests
+    public static final String expectedUrlGifts = "https://romanceabroad.com/store/category/4";
+    public static final String expectedUrlTourTo = "https://romanceabroad.com/store/sweets/20-tour_to_ukraine";
+    public static final String expectedUrlBlogPage = "https://romanceabroad.com/content/view/9-factors-to-keep-in-mind-when-dating-a-ukrainian";
+    public static final String expectedTitleWork = "Ukrainian women for marriage";
+    public static final String expectedTitlePhotos = "Ukrainian women photos";
+    public static final String expectedTitleTour = "TOURS TO UKRAINE";
+    public static final String expectedTitleWomen = "Single Ukrainian women online";
+    public static final String expectedTitleSlavic = "Slavic Lady for Marriage";
+    public static final String inputsearch2 = "spa";
 }
 

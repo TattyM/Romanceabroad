@@ -46,5 +46,16 @@ public class Locators {
     public static final By BLOCK_FOOTER = By.xpath("//ul[@class='footer-menu-list-block list-group']//li");
     public static final By TEXT_DESCRIPTION = By.xpath("//div[contains(text(),'Amazing mix chocolate and fruits in one basket for')]");
 
+    // ArrayListsConditionsInLoopsTests
+    public static final By LINK_LOOP_HEADER = By.xpath("//ul[@class='navbar-nav']//li");
+    public static final By LINK_TITLE = By.xpath("//h1");
+    public static final By LINK_LOOP_PHOTOS = By.xpath("//a[@class='g-pic-border g-rounded g-users-gallery__photo-img']");
+    public static final By LINK_BLOCK = By.xpath("//div[@class='contrasting-block row g-bestsellers-gallery']");
+    public static final By LINK_PHOTOS_TOUR = By.xpath("//div[@class='product-main-media pg-thumbnail']");
+    public static final By LINK_PHOTOS_CAROUSEL = By.xpath("//div[@class='pre-main-inner-content']");
+    public static final By LINK_TEXT_BLOCK = By.xpath("//div[@class='info-content-block wysiwyg']");
+    public static final By LINK_PHOTOS_GIRLS = By.xpath("//img[@src='https://romanceabroad.com/uploads/info-page-logo/0/0/0/25/big-9aff795b78.jpg']");
+    public static final By LINK_TEXT_TITLE = By.xpath("//strong[contains(text(),'Old-fashioned')]");
+
 
 }

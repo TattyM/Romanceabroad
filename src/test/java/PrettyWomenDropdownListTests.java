@@ -5,9 +5,10 @@ public class PrettyWomenDropdownListTests extends BaseUI {
     @Test
     public void testPrettyWomenPage() {
         mainPage.clickPrettyWomenLink();
-        searchPage.selectMinAge();
-        searchPage.selectMaxAge();
+        mainPage.getDropDownListByValue(driver.findElement(Locators.MIN_AGE_DROPDOWN_LIST),Data.minage);
+        mainPage.getDropDownListByValue(driver.findElement(Locators.MAX_AGE_DROPDOWN_LIST), Data.maxage);
         searchPage.selectButtonNext();
+
     }
 
 }

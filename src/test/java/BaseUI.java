@@ -53,9 +53,6 @@ public class BaseUI {
             driver.get("chrome://settings/clearBrowserData");
 
         }
-
-
-        driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 20);
         mainPage = new MainPage(driver, wait);
         searchPage = new SearchPage(driver, wait);

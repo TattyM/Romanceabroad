@@ -45,13 +45,17 @@ public class MainPage extends BaseActions {
         pageGifts.click();
         String currentUrlGifts = driver.getCurrentUrl();
         System.out.println(currentUrlGifts);
-        Assert.assertEquals(currentUrlGifts, Data.expectedUrlGifts);
+
 
     }
 
     public void clickPrettyWomenLink() {
         WebElement pagePrettyWomen = driver.findElement(Locators.LINK_PRETTY_WOMEN);
         pagePrettyWomen.click();
+        String currentUrlSearch = driver.getCurrentUrl();
+        System.out.println(currentUrlSearch);
+        Assert.assertEquals(currentUrlSearch, Data.expectedUrlPrettyWomen);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
     public void clickBlogPageLink() {
