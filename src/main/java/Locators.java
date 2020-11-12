@@ -48,6 +48,7 @@ public class Locators {
 
     // ArrayListsConditionsInLoopsTests
     public static final By LINK_LOOP_HEADER = By.xpath("//ul[@class='navbar-nav']//li");
+    public static final By LINK_LOOP_FOOTER = By.xpath("//ul[@class='pagination']");
     public static final By LINK_TITLE = By.xpath("//h1");
     public static final By LINK_LOOP_PHOTOS = By.xpath("//a[@class='g-pic-border g-rounded g-users-gallery__photo-img']");
     public static final By LINK_BLOCK = By.xpath("//div[@class='contrasting-block row g-bestsellers-gallery']");
@@ -56,6 +57,6 @@ public class Locators {
     public static final By LINK_TEXT_BLOCK = By.xpath("//div[@class='info-content-block wysiwyg']");
     public static final By LINK_PHOTOS_GIRLS = By.xpath("//img[@src='https://romanceabroad.com/uploads/info-page-logo/0/0/0/25/big-9aff795b78.jpg']");
     public static final By LINK_TEXT_TITLE = By.xpath("//strong[contains(text(),'Old-fashioned')]");
-
-
+    public static final By BLOCK_TITLE = By.xpath("//div[contains(text(),'People found: 71')]");
+    public static final By DROPDOWN_LIST = By.xpath(" //select[@id='sorter-select-9384']");
 }

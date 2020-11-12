@@ -4,12 +4,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import java.util.concurrent.TimeUnit;
+import java.util.List;
+
 
 public class MainPage extends BaseActions {
     public MainPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
     }
+
 
     public void clickJoinTodayButton() {
         WebElement linkJoinToday = driver.findElement(Locators.LINK_JOIN_TODAY);
@@ -18,7 +20,6 @@ public class MainPage extends BaseActions {
     }
 
     public void firstPartOfRegistration() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(Locators.TEXT_EMAIL).sendKeys(Data.email);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.TEXT_PASSWORD)));
         driver.findElement(Locators.TEXT_PASSWORD).sendKeys(Data.password);
@@ -27,7 +28,6 @@ public class MainPage extends BaseActions {
     }
 
     public void secondPartOfRegistration() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(Locators.TEXT_USERNAME).sendKeys(generateNewNumber(Data.username, 6));
         driver.findElement(Locators.SELECT_DAY).click();
         driver.findElement(Locators.SELECT_DAY_NUMBER).click();
@@ -40,22 +40,24 @@ public class MainPage extends BaseActions {
 
     }
 
+    public void checkboxConfirmation() {
+        WebElement checkboxConfirmation = driver.findElement(Locators.CHECKBOX_CONFIRM);
+        if (!driver.findElement(Locators.LINK_JOIN_TODAY).isSelected()) {
+            checkboxConfirmation.click();
+        } else {
+            Assert.fail("Checkbox is selected!");
+        }
+    }
+
     public void clickGiftsPageLink() {
         WebElement pageGifts = driver.findElement(Locators.LINK_GIFTS);
         pageGifts.click();
-        String currentUrlGifts = driver.getCurrentUrl();
-        System.out.println(currentUrlGifts);
-
 
     }
 
     public void clickPrettyWomenLink() {
         WebElement pagePrettyWomen = driver.findElement(Locators.LINK_PRETTY_WOMEN);
         pagePrettyWomen.click();
-        String currentUrlSearch = driver.getCurrentUrl();
-        System.out.println(currentUrlSearch);
-        Assert.assertEquals(currentUrlSearch, Data.expectedUrlPrettyWomen);
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
     public void clickBlogPageLink() {
@@ -67,6 +69,5 @@ public class MainPage extends BaseActions {
         WebElement pagePhotos = driver.findElement(Locators.LINK_PHOTOS);
         pagePhotos.click();
     }
-
 
 }

@@ -1,5 +1,6 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -7,7 +8,34 @@ import java.util.List;
 public class ConditionsArrayListsLoopsTests {
 
     @Test
-    public void test1() {         //ConditionsStrings
+    public void test1() {     //StringConditions
+        List<String> countries = new ArrayList<>(Arrays.asList("China", "India", "Singapore"));
+        String sentence = " Countries that don't change daylight saving time!";
+        countries.add("Kongo " + sentence);
+        System.out.println(countries);
+        for (int i = 0; i < countries.size(); i++) {
+            String element = countries.get(i);
+            System.out.println(i + " Repeat");
+            if (element.endsWith("na")) {
+                System.out.println("Country in the list!");
+            }
+            if (element.contains("n")) ;
+            {
+                System.out.println("List is true!");
+            }
+            if (element.equals("Ukraine")) {
+                System.out.println("Ukraine in the list!");
+            }
+            if (element.contains("Kongo") || element.contains("J")) {
+                System.out.println("Singapore and Kongo in the list");
+            } else {
+                System.out.println("!!!!!!!");
+            }
+        }
+    }
+
+    @Test
+    public void test2() {         //ConditionsStrings
         String boat1 = "Freshwater Fishing Boat";
         String boat2 = "Sail Boat";
         String boat3 = "Speed Boat";
@@ -25,7 +53,7 @@ public class ConditionsArrayListsLoopsTests {
     }
 
     @Test
-    public void test2() {          //ConditionsInts
+    public void test3() {          //ConditionsInts
         int agemin = 18;
         int agemax = 60;
         if (agemin == 18) {
@@ -40,24 +68,24 @@ public class ConditionsArrayListsLoopsTests {
     }
 
     @Test
-    public void test3() {          //ArrayListStrings
+    public void test4() {          //ArrayListStrings
         List<String> yachts = new ArrayList<>(Arrays.asList("Azimut", "Mangusta", "Benetti", "VanDutch"));
         if (yachts.contains("VanDutch")) {
-            System.out.println(yachts + yachts.set( 1, "Ferretti"));
+            System.out.println(yachts + yachts.set(1, "Ferretti"));
         }
 
     }
 
     @Test
-    public void test4() {          //ArrayListInts
+    public void test5() {          //ArrayListInts
         List<Integer> ages = new ArrayList<>(Arrays.asList(16, 20, 35, 49));
         int sum = ages.get(1) + ages.get(3);
         System.out.println(sum + ages.get(0));
     }
 
     @Test
-    public void test5(){          //LoopStrings
-       List<String> flowers = new ArrayList<>(Arrays.asList("Roses","Tulips","Peonies"));
+    public void test6() {          //LoopStrings
+        List<String> flowers = new ArrayList<>(Arrays.asList("Roses", "Tulips", "Peonies"));
         for (int i = 0; i < flowers.size(); i++) {
             System.out.println(flowers.get(i));
 

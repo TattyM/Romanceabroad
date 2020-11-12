@@ -13,9 +13,6 @@ public class PhotosPage extends BaseActions {
     }
 
     public void clickAlbumsButton() {
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        String currentUrlPhotos = driver.getCurrentUrl();
-        Assert.assertEquals(currentUrlPhotos, Data.expectedUrlPhotos);
         WebElement buttonAlbums = driver.findElement(Locators.BUTTON_ALBUMS);
         buttonAlbums.click();
     }
@@ -24,13 +21,9 @@ public class PhotosPage extends BaseActions {
         wait.until(ExpectedConditions.elementToBeClickable(Locators.BUTTON_РУССКИЙ));
         WebElement buttonРусский = driver.findElement(Locators.BUTTON_РУССКИЙ);
         buttonРусский.click();
-        System.out.println(" Язык страницы - Русский !");
     }
 
     public void clickIconGifts() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        String currentUrlPhotos = driver.getCurrentUrl();
-        Assert.assertEquals(currentUrlPhotos, Data.expectedUrlGiftsSearch);
         WebElement iconGifts = driver.findElement(Locators.LINK_ICON_GIFTS);
         iconGifts.click();
     }

@@ -2,40 +2,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
 public class ArrayListsConditionsInLoopsTests extends BaseUI {
-    @Test
-    public void testStringConditions() {
-        List<String> countries = new ArrayList<>(Arrays.asList("China", "India", "Singapore"));
-        String sentence = " Countries that don't change daylight saving time!";
-        countries.add("Kongo " + sentence);
-        System.out.println(countries);
-        for (int i = 0; i < countries.size(); i++) {
-            String element = countries.get(i);
-            System.out.println(i + " Repeat");
-            if (element.endsWith("na")) {
-                System.out.println("Country in the list!");
-            }
-            if (element.contains("n")) ;
-            {
-                System.out.println("List is true!");
-            }
-            if (element.equals("Ukraine")) {
-                System.out.println("Ukraine in the list!");
-            }
-            if (element.contains("Kongo") || element.contains("J")) {
-                System.out.println("Singapore and Kongo in the list");
-            } else {
-                System.out.println("!!!!!!!");
-            }
-        }
-    }
+
 
     @Test
     public void testHowWeWorkPrettyWomenPages() {
@@ -129,8 +101,7 @@ public class ArrayListsConditionsInLoopsTests extends BaseUI {
     public void testBlogPageLoop() {
         String actualUrlBlog;
         String actualUrlBlogPage;
-        WebElement pageBlog = driver.findElement(Locators.LINK_BLOG);
-        pageBlog.click();
+        mainPage.clickBlogPageLink();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         String currentUrlBlog = driver.getCurrentUrl();
         softAssert.assertEquals(currentUrlBlog, Data.expectedUrlBlog, "Don't see page!");
@@ -160,7 +131,39 @@ public class ArrayListsConditionsInLoopsTests extends BaseUI {
             links = driver.findElements(Locators.BLOCK_LIST);
         }
     }
-
+    @Test
+    public void testPrettyWomenPageLoop() {
+        String currentUrlSearch;
+        mainPage.clickPrettyWomenLink();
+        currentUrlSearch = driver.getCurrentUrl();
+        softAssert.assertEquals(currentUrlSearch, Data.expectedUrlPrettyWomen, "Cannot find the page!");
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        List<WebElement> links = driver.findElements(Locators.LINK_LOOP_FOOTER);
+        System.out.println(links.size());
+        for (int i = 0; i < links.size(); i++) {
+            String categories = links.get(i).getText();
+            System.out.println(categories);
+            links.get(i).click();
+            if(categories.contains("2")){
+                driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+                driver.findElement(Locators.BLOCK_TITLE).isDisplayed();
+                Assert.assertEquals(currentUrlSearch, Data.expectedUrlPrettyWomen);
+                if(currentUrlSearch.contains("#")) {
+                    Assert.fail("Not a good Url!!!");
+                }else{
+                    System.out.println("It is a good Url!!!");
+                }
+            }
+            if(categories.contains("4")){
+                driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+                mainPage.getDropDownListByValue(driver.findElement(Locators.DROPDOWN_LIST),Data.select);
+                driver.findElement(Locators.BLOCK_TITLE).isDisplayed();
+                Assert.assertEquals(currentUrlSearch, Data.expectedUrlPrettyWomen2);
+            }
+            driver.getCurrentUrl();
+            links = driver.findElements(Locators.LINK_LOOP_FOOTER);
+        }
+    }
 
 }
 

@@ -1,20 +1,17 @@
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
 
 public class JoinTodayTests extends BaseUI {
 
     @Test
     public void testJoinToday() {
         mainPage.clickJoinTodayButton();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         mainPage.firstPartOfRegistration();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         mainPage.secondPartOfRegistration();
-        WebElement checkboxConfirmation = driver.findElement(Locators.CHECKBOX_CONFIRM);
-        if (!driver.findElement(Locators.LINK_JOIN_TODAY).isSelected()){
-        checkboxConfirmation.click();
-        }else{
-            Assert.fail("Checkbox is selected!");
-        }
+        mainPage.checkboxConfirmation();
     }
 }
 
