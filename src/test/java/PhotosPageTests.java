@@ -1,7 +1,6 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
 
 public class PhotosPageTests extends BaseUI {
 
@@ -9,10 +8,11 @@ public class PhotosPageTests extends BaseUI {
     @Test
     public void testPhotosPage() {
         mainPage.clickPhotosPageLink();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        mainPage.javaWaitSec(3);
         String currentUrlPhotos = driver.getCurrentUrl();
         Assert.assertEquals(currentUrlPhotos, Data.expectedUrlPhotos);
-        photosPage.clickAlbumsButton();
+        mainPage.perfomClick(driver.findElement(Locators.BUTTON_ALBUMS));
+        mainPage.javaWaitSec(3);
         photosPage.selectLanguageButton();
         System.out.println(" Язык страницы - Русский !");
     }

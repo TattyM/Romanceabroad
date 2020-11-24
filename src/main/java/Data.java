@@ -27,6 +27,7 @@ public class Data {
 
     //Gifts Search Page
     public static final String expectedUrlGiftsSearch = "https://romanceabroad.com/media/index";
+    public static final String expectedUrlTeddy = "https://romanceabroad.com/store/sweets/11-teddy_bear";
     public static final String inputsearch = "Teddy";
 
     //ConditionsArrayListsTestsLoopsExtended
@@ -37,6 +38,8 @@ public class Data {
     public static final String expectedUrlTourTo = "https://romanceabroad.com/store/sweets/20-tour_to_ukraine";
     public static final String expectedUrlBlogPage = "https://romanceabroad.com/content/view/9-factors-to-keep-in-mind-when-dating-a-ukrainian";
     public static final String expectedUrlPrettyWomen2 = "https://romanceabroad.com/users/search#";
+    public static final String expectedUrlHowWeWork = "https://romanceabroad.com/content/view/how-it-works";
+    public static final String expectedUrl = "https://romanceabroad.com/";
     public static final String expectedTitleWork = "Ukrainian women for marriage";
     public static final String expectedTitlePhotos = "Ukrainian women photos";
     public static final String expectedTitleTour = "TOURS TO UKRAINE";
@@ -44,5 +47,6 @@ public class Data {
     public static final String expectedTitleSlavic = "Slavic Lady for Marriage";
     public static final String inputsearch2 = "spa";
     public static final String select = "name";
+
 }
 

@@ -1,6 +1,5 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import java.util.concurrent.TimeUnit;
 
 public class GiftsIconTests extends BaseUI {
 
@@ -8,13 +7,14 @@ public class GiftsIconTests extends BaseUI {
     @Test
     public void testGiftsSearchPage() {
         mainPage.clickPhotosPageLink();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        mainPage.javaWaitSec(3);
         String currentUrlPhotos = driver.getCurrentUrl();
         Assert.assertEquals(currentUrlPhotos, Data.expectedUrlGiftsSearch);
-        photosPage.clickIconGifts();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        giftsPage.inputSearchGifts();
+        driver.findElement(Locators.LINK_ICON_GIFTS).click();
+        mainPage.javaWaitSec(3);
+        mainPage.ajaxSendKeys(driver.findElement(Locators.LINK_TEXT_FIELD),Data.inputsearch);
         giftsPage.clickButtonSearch();
+        mainPage.verifyLinkActive(Data.expectedUrlTeddy);
     }
 
 }

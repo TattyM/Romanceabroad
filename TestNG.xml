@@ -8,7 +8,7 @@
 
         <classes>
 
-            <class name ="PhotosPageTests"/>
+            <class name ="PrettyWomenDropdownListTests"/>
 
         </classes>
 
@@ -20,19 +20,19 @@
 
         <classes>
 
-            <class name ="PhotosPageTests"/>
-
+            <class name ="PrettyWomenDropdownListTests"/>
         </classes>
 
     </test>
 
-    <test name="ChromeTestCases">
 
-        <parameter name="browser" value="chrome"/>
+            <test name="ChromeTestCases">
+
+            <parameter name="browser" value="chrome"/>
 
         <classes>
 
-            <class name ="PhotosPageTests"/>
+            <class name ="PrettyWomenDropdownListTests"/>
 
         </classes>
 

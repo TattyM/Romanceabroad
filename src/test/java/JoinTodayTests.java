@@ -1,17 +1,21 @@
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
-
 public class JoinTodayTests extends BaseUI {
 
     @Test
     public void testJoinToday() {
+        mainPage.ajaxScroll(driver.findElement(Locators.LINK_JOIN_TODAY));
         mainPage.clickJoinTodayButton();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        mainPage.firstPartOfRegistration();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        mainPage.secondPartOfRegistration();
-        mainPage.checkboxConfirmation();
+        mainPage.ajaxSendKeys(driver.findElement(Locators.TEXT_EMAIL), (Data.email));
+        mainPage.javaWaitSec(3);
+        driver.findElement(Locators.TEXT_PASSWORD).sendKeys(Data.password);
+        mainPage.javaWaitSec(3);
+        driver.findElement(Locators.BUTTON_NEXT).click();
+        mainPage.ajaxSendKeys(driver.findElement(Locators.TEXT_USERNAME), (Data.username));
+        mainPage.partOfRegistration();
+        mainPage.javaWaitSec(3);
+        mainPage.ajaxSendKeys(driver.findElement(Locators.TEXT_PHONE), (Data.phone));
+        mainPage.clickUnselectedCheckbox(Locators.CHECKBOX_CONFIRM);
     }
-}
 
+}

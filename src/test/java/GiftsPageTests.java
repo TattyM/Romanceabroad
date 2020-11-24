@@ -1,5 +1,5 @@
 import org.testng.annotations.Test;
-import java.util.concurrent.TimeUnit;
+
 
 public class GiftsPageTests extends BaseUI {
 
@@ -9,9 +9,11 @@ public class GiftsPageTests extends BaseUI {
         String currentUrlGifts = driver.getCurrentUrl();
         System.out.println(currentUrlGifts);
         softAssert.assertEquals(currentUrlGifts, Data.expectedUrlGifts, "Url is wrong");
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        giftsPage.selectProduct();
-        giftsPage.selectProductDescription();
+        mainPage.javaWaitSec(3);
+        mainPage.perfomClick(driver.findElement(Locators.BLOCK_PRODUCT));
+        mainPage.javaWaitSec(3);
+        mainPage.perfomClick(driver.findElement(Locators.LINK_FRUITS));
+        System.out.println("We can see product!");
 
     }
 }

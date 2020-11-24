@@ -11,9 +11,8 @@ public class BlogPageTests extends BaseUI {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         String currentUrlBlog = driver.getCurrentUrl();
         System.out.println("Blog Page!");
-        blogPage.clickLinkKharkovAgency();
+        blogPage.perfomClick(driver.findElement(Locators.LINK_KHARKOV_AGENCY));
         Assert.assertEquals(currentUrlBlog, Data.expectedUrlBlog);
+
     }
-
 }
-
