@@ -22,7 +22,7 @@ public class BaseUI {
     PhotosPage photosPage;
     SoftAssert softAssert = new SoftAssert();
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"user","admin","ie"}, alwaysRun = true)
     @Parameters("browser")
     public void setup(@Optional("chrome") String browser, Method method) {
         if (browser.equalsIgnoreCase("firefox")) {

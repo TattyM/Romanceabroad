@@ -51,6 +51,7 @@ public class Locators {
     public static final By LINK_LINKS = By.xpath("//a");
     public static final By LINK_HOME = By.xpath("//a[contains(text(),'HOME')]");
     public static final By LINK_LOOP_HEADER = By.xpath("//ul[@class='navbar-nav']//li");
+    public static final By LINK_LOOP = By.xpath("//ul[@class='navbar-nav']//li/a");
     public static final By LINK_LOOP_FOOTER = By.xpath("//ul[@class='pagination']");
     public static final By LINK_LOOP_PHOTOS = By.xpath("//a[@class='g-pic-border g-rounded g-users-gallery__photo-img']");
     public static final By LINK_BLOCK = By.xpath("//div[@class='contrasting-block row g-bestsellers-gallery']");

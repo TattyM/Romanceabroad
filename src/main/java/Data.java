@@ -1,6 +1,7 @@
 import org.openqa.selenium.By;
 
 public class Data {
+    public static final String mainUrl = "https://romanceabroad.com/";
 
     //JoinToday
     public static final String email = "111@gmail.com";
