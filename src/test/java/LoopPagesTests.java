@@ -33,7 +33,7 @@ public class LoopPagesTests extends BaseUI {
     }
 
     @Test (priority = 3,enabled = isTest8,groups = {"user"})
-       public void smokeTestMAinPage(){
+       public void smokeTestMainPage(){
            List<WebElement> mainTabs = driver.findElements(Locators.LINK_LOOP);
         for (int i = 0; i < mainTabs.size(); i++) {
             mainTabs.get(i).click();

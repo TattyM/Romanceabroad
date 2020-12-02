@@ -2,19 +2,32 @@ import org.openqa.selenium.By;
 
 public class Locators {
 
+    //Contact Us
+    public static final By SELECT_REASON = By.xpath("//option[contains(text(),'Other')]");
+    public static final By SELECT_NAME = By.xpath("//input[@name='user_name']");
+    public static final By SELECT_EMAIL = By.xpath("//input[@name='user_email']");
+    public static final By TEXT_REASON = By.xpath("//select[@name='id_reason']");
+    public static final By TEXT_SUBJECT = By.xpath("//input[@name='subject']");
+    public static final By TEXT_MESSAGE = By.xpath("//textarea[@name='message']");
+    public static final By TEXT_CODE = By.cssSelector("#g-recaptcha-response");
+    public static final By BUTTON_SEND = By.xpath("//input[@class='btn btn-primary']");
+
+
     //JoinToday
     public static final By LINK_JOIN_TODAY = By.xpath("//a[(text()='JOIN TODAY!')]");
     public static final By TEXT_EMAIL = By.cssSelector("input#email");
     public static final By TEXT_PASSWORD = By.cssSelector("input#password");
-    public static final By BUTTON_NEXT = By.xpath("//button[@data-action='next-page'][text()='Next']");
     public static final By TEXT_USERNAME = By.cssSelector("input#nickname");
-    public static final By SELECT_DAY = By.cssSelector("#daySelect");
-    public static final By SELECT_DAY_NUMBER = By.xpath("//li[@data-handler='selectDay']//a[text()='21']");
-    public static final By SELECT_MONTH = By.cssSelector("#monthSelect");
-    public static final By SELECT_MONTH_NAME = By.xpath("//li[@data-handler='selectMonth']//a[text()='Apr']");
-    public static final By SELECT_YEAR = By.cssSelector("#yearSelect");
-    public static final By SELECT_YEAR_NUMBER = By.xpath("//li[@data-handler='selectYear']//a[text()='1999']");
     public static final By TEXT_PHONE = By.cssSelector("input[name='data[phone]']");
+    public static final By BUTTON_NEXT = By.xpath("//button[@data-action='next-page'][text()='Next']");
+    public static final By SELECT_DAY = By.cssSelector("#daySelect");
+    public static final By SELECT_DAY_NUMBER = By.xpath("//li[@data-handler='selectDay']");
+    public static final By SELECT_MONTH = By.cssSelector("#monthSelect");
+    public static final By SELECT_MONTH_NAME = By.xpath("//li[@data-handler='selectMonth']");
+    public static final By SELECT_YEAR = By.cssSelector("#yearSelect");
+    public static final By SELECT_YEAR_NUMBER = By.xpath("//li[@data-handler='selectYear']");
+    public static final By AUTOFILLING_FORM_LOCATION = By.xpath("//input[@name='region_name']");
+    public static final By LIST_VALUE_LOCATION = By.xpath("//div[@class='dropdown dropdown_location']//ul//li");
     public static final By CHECKBOX_CONFIRM = By.cssSelector("#confirmation");
 
     //PrettyWomenDropdownList

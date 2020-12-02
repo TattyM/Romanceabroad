@@ -30,21 +30,7 @@ public class MainPageTests extends BaseUI {
         photosPage.selectLanguageButton();
         System.out.println(" Язык страницы - Русский !");
     }
-    @Test(priority = 2,enabled = isTest11,groups = {"ie","user","admin"})
-    public void testJoinTodayTest11() {
-        mainPage.ajaxScroll(driver.findElement(Locators.LINK_JOIN_TODAY));
-        mainPage.clickJoinTodayButton();
-        mainPage.ajaxSendKeys(driver.findElement(Locators.TEXT_EMAIL), (Data.email));
-        mainPage.javaWaitSec(3);
-        driver.findElement(Locators.TEXT_PASSWORD).sendKeys(Data.password);
-        mainPage.javaWaitSec(3);
-        driver.findElement(Locators.BUTTON_NEXT).click();
-        mainPage.ajaxSendKeys(driver.findElement(Locators.TEXT_USERNAME), (Data.username));
-        mainPage.partOfRegistration();
-        mainPage.javaWaitSec(3);
-        mainPage.ajaxSendKeys(driver.findElement(Locators.TEXT_PHONE), (Data.phone));
-        mainPage.clickUnselectedCheckbox(Locators.CHECKBOX_CONFIRM);
-    }
+
     @Test(priority = 3,enabled = isTest12,groups = {"ie","admin"})
     public void testPrettyWomenPageTest12() {
         mainPage.clickPrettyWomenLink();

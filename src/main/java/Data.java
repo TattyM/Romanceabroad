@@ -3,11 +3,24 @@ import org.openqa.selenium.By;
 public class Data {
     public static final String mainUrl = "https://romanceabroad.com/";
 
+    //Contact us
+    public static final String urlContactUs = "https://romanceabroad.com/tickets/";
+    public static final String name = "Pedro666";
+    public static final String reason = "Other";
+    public static final String subject = "Did not like any women";
+    public static final String message = "Dear Administrator of site Romance Abroad do you have any other women to show? Couldn't make my choice !";
+    public static final String code = "9474635";
+
     //JoinToday
     public static final String email = "111@gmail.com";
     public static final String password = "868hb4";
     public static final String username = "Tatty2020";
     public static final String phone = "755038748";
+    public static final String day = "21";
+    public static final String month = "Apr";
+    public static final String year = "1995";
+    public static final String town = "Boca Raton";
+    public static final String location = "Boca Raton, United States";
 
 
     //PrettyWomenDropdownList

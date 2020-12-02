@@ -4,6 +4,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.math.BigInteger;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -26,6 +27,7 @@ public class BaseActions {
         return name + RandomStringUtils.random(length, "172984757");
 
     }
+
     public void getDropDownListByIndex(By locator, int index) {
         Select select = new Select(driver.findElement(locator));
         select.selectByIndex(index);
@@ -196,9 +198,14 @@ public class BaseActions {
             }
         }
     }
+
     public String getAnyTitle() {
         String title = driver.findElement(Locators.LINK_TITLE).getText();
         return title;
     }
 
+
 }
+
+
+
