@@ -51,9 +51,9 @@ public class BaseActions {
     //overload
     public void ajaxClick(WebElement element) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-        wait.until(ExpectedConditions.elementToBeClickable(element));
-        element.click();
-    }
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+        }
+
 
     public void ajaxClick(By by) {
         wait.until(ExpectedConditions.elementToBeClickable(by));

@@ -14,7 +14,7 @@ public class Data {
     //JoinToday
     public static final String email = "111@gmail.com";
     public static final String password = "868hb4";
-    public static final String username = "Tatty2020";
+    public static final String username = "Tatty";
     public static final String phone = "755038748";
     public static final String day = "21";
     public static final String month = "Apr";

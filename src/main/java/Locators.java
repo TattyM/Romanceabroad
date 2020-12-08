@@ -78,17 +78,18 @@ public class Locators {
     public static final By DROPDOWN_LIST = By.xpath(" //select[@id='sorter-select-9384']");
     public static final By PAGE_FOOTER = By.xpath("//div[@id='footer-menu-title-2']");
 
-    //Locators with attributes
-    public static final By TEXT_HEADER_HOME = By.xpath("//p[contains(text(),'FIND YOUR LOVE, YOUR WIFE, YOUR DREAM!')]");
-    public static final By TEXT_CONTENT = By.xpath("//a[@href='https://romanceabroad.com/content/']");
-    public static final By TEXT_DESCRIPTION2 = By.xpath("//p[contains(text(),'The fear when beginning a process like this one is')]");
-    public static final By IMAGE_PRODUCT = By.xpath("//div[@class='similar-products pt20']");
-    public static final By IMAGE_HOME_PAGE = By.xpath("//img[@src='/img/portfolio/slideimg4.jpg']");
-    public static final By LOGO_SIDE_MENU = By.xpath("//span[@class='badge sidebar-sum hide-always']");
-    public static final By LOGO_MENU = By.xpath("//i[@class='fa fa-bars']");
-    public static final By BUTTON_QUICK_VIEW = By.xpath("//div[@id='product_quick_view_16']");
-    public static final By BUTTON_PAY_PAL = By.xpath("//a[@class='btn btn-primary btn-block']");
-    public static final By BUTTON_VIDEO = By.xpath("//span[contains(text(),'Video')]");
+    //Locators with 2 attributes
+    public static final By LINK_FRUITS_BASKET = By.xpath("//a[@href='https://romanceabroad.com/store/sweets/3-chocolate_and_fruits_in_one_basket'][contains(text(),'Chocolate and fruits')]");
+    public static final By LINK_PRIVACY = By.xpath("//a[@id='footer_footer-menu-policy-item_footer-menu-privacy-item'][@href='https://romanceabroad.com/content/view/privacy-and-security']");
+    public static final By PHOTO_SUSHI = By.xpath("//img[@class='img-rounded img-responsive'][@title='Sushi sets']");
+    public static final By BUTTON_PAYPAL = By.xpath("//a[@class='btn btn-primary btn-block'][@target='_blank']");
+    public static final By TEXT_ADVERTISING = By.xpath("//a[@rel='nofollow'][@target='_blank']");
+    public static final By IMAGE_FIRST_SLIDE = By.xpath("//img[@class=' img-fluid'][@src='/img/portfolio/slideimg4.jpg']");
+    public static final By LINK_CONTENT = By.xpath("//a[@href='https://romanceabroad.com/content/'][@id='breadcrumb_']");
+    public static final By BUTTON_TOGGLE = By.xpath("//button[@type='button'][@class='btn btn-secondary dropdown-toggle']");
+    public static final By LINK_USER = By.xpath("//a[@title='Tafita, 35'][@href='https://romanceabroad.com/users/view/305/profile']");
+    public static final By LINK_VIDEO = By.xpath("//a[@href='https://romanceabroad.com/media/video'][@class='b-tabs__text']");
+    public static final By LINK_USER_CAROUSEL = By.xpath("//div[@class='swiper-slide  slick-slide slick-active']//img[@src='https://romanceabroad.com/uploads/user-logo/0/0/3/314/small-f87f88a850.PNG?1607034032'][@alt='romo4kaly']");
 
     //Locators with 2 parents
     public static final By TEXT_PRICE = By.xpath("//div[@class='price']//span[contains(text(),'$99.00')]");

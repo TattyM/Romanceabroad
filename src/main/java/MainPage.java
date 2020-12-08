@@ -22,7 +22,7 @@ public class MainPage extends BaseActions {
         driver.findElement(Locators.TEXT_EMAIL).sendKeys(email);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.TEXT_PASSWORD)));
         driver.findElement(Locators.TEXT_PASSWORD).sendKeys(password);
-        wait.until(ExpectedConditions.elementToBeClickable(Locators.BUTTON_NEXT));
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(Locators.BUTTON_NEXT).click();
     }
 
@@ -38,7 +38,9 @@ public class MainPage extends BaseActions {
         clickValueOfList(Locators.SELECT_YEAR_NUMBER, year);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.TEXT_PHONE)));
         driver.findElement(Locators.TEXT_PHONE).sendKeys(phone);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(Locators.AUTOFILLING_FORM_LOCATION).clear();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(Locators.AUTOFILLING_FORM_LOCATION).sendKeys(town);
         clickValueOfList(Locators.LIST_VALUE_LOCATION, location);
 

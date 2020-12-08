@@ -2,7 +2,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
-public class MainPageTests extends BaseUI {
+public class MainTests extends BaseUI {
     public static final boolean isTest9 = false;
     public static final boolean isTest10 = true;
     public static final boolean isTest11 = false;
@@ -19,7 +19,7 @@ public class MainPageTests extends BaseUI {
         Assert.assertEquals(currentUrlBlog, Data.expectedUrlBlog);
 
     }
-    @Test(priority = 4,enabled = isTest10,groups = {"user"})
+    @Test(priority = 2,enabled = isTest10,groups = {"user"})
     public void testPhotosPageTest10() {
         mainPage.clickPhotosPageLink();
         mainPage.javaWaitSec(3);

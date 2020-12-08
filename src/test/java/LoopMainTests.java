@@ -5,13 +5,15 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class LoopMainPagesTests extends BaseUI {
+public class LoopMainTests extends BaseUI {
     public static final boolean isTest3 = true;
     public static final boolean isTest4 = true;
     public static final boolean isTest5 = true;
+    public static final boolean isTest6 = false;
+    public static final boolean isTest7 = false;
+    public static final boolean isTest8 = true;
 
-
-    @Test(priority = 2, enabled = isTest3, groups = {"ie", "admin"})
+    @Test(priority = 1, enabled = isTest3, groups = {"ie", "admin"})
     public void testHowWeWorkTourToPagesTest3() {
         String actualTitle;
         String actualUrlHowWeWork;
@@ -52,7 +54,7 @@ public class LoopMainPagesTests extends BaseUI {
         }
     }
 
-    @Test(priority = 4, enabled = isTest4, groups = {"user", "admin"})
+    @Test(priority = 2, enabled = isTest4, groups = {"user", "admin"})
     public void testPrettyWomenPagesTest4() {
         String actualTitle;
         String actualUrlPrettyWomen;
@@ -79,7 +81,7 @@ public class LoopMainPagesTests extends BaseUI {
         }
     }
 
-    @Test(priority = 1, enabled = isTest5, groups = {"ie", "user", "admin"})
+    @Test(priority = 3, enabled = isTest5, groups = {"ie", "user", "admin"})
     public void testPhotosGiftsPagesTest5() {
         String actualTitle;
         String actualUrlPhotos;
@@ -109,5 +111,39 @@ public class LoopMainPagesTests extends BaseUI {
             driver.get(mainUrl);
             links = driver.findElements(Locators.LINK_LOOP_HEADER);
         }
+    }
+
+    @Test(priority = 4, enabled = isTest6, groups = {"ie"})
+    public void testPhotosPageTest6() {
+        List<WebElement> list = driver.findElements(Locators.LINK_LINKS);
+        for (int i = 0; i < list.size(); i++) {
+            if (i == 4) {
+                mainPage.ajaxClick(driver.findElement(Locators.LINK_HOME));
+                mainPage.javaWaitSec(1);
+                mainPage.checkLinksOnWebPage("//img", "src");
+            }
+        }
+    }
+
+    @Test(priority = 5, enabled = isTest7, groups = {"ie", "user", "admin"})
+    public void testSignInTest7() {
+        String actualUrl;
+        actualUrl = driver.getCurrentUrl();
+        mainPage.clickValueOfList((Locators.LINK_LOOP_HEADER), "navbar-nav");
+        mainPage.ajaxClick(driver.findElement(Locators.LINK_SIGN_IN));
+        Assert.assertEquals(actualUrl, Data.expectedUrl);
+        System.out.println("Log in form is displayed!");
+    }
+
+    @Test(priority = 6, enabled = isTest8, groups = {"user"})
+    public void smokeTestMainPage() {
+        List<WebElement> mainTabs = driver.findElements(Locators.LINK_LOOP);
+        for (int i = 0; i < mainTabs.size(); i++) {
+            mainTabs.get(i).click();
+            driver.get(Data.mainUrl);
+            mainTabs = driver.findElements(Locators.LINK_LOOP);
+
+        }
+
     }
 }

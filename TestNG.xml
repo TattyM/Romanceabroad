@@ -8,7 +8,7 @@
 
         <classes>
 
-            <class name ="LoopMainPagesTests"/>
+            <class name ="LoopMainTests"/>
 
         </classes>
 
@@ -20,12 +20,12 @@
 
         <classes>
 
-            <class name ="LoopMainPagesTests"/>
+            <class name ="LoopMainTests"/>
         </classes>
 
     </test>-->
 
-    <test name="LoopMainPagesTests">
+    <test name="GiftsTests">
 
             <parameter name="browser" value="chrome"/>
         
@@ -37,7 +37,7 @@
             </run>
         </groups>
         <classes>
-            <class name ="LoopMainPagesTests">
+            <class name ="GiftsTests">
             <methods>
                 <include name=".*HowWeWork.*"/>
                 <include name=".*Women.*"/>

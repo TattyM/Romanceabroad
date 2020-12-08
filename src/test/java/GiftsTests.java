@@ -1,25 +1,36 @@
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class GiftsPageTests extends BaseUI {
-    public static final boolean isTest1 = true;
-    public static final boolean isTest2 = true;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 
+public class GiftsTests extends BaseUI {
+    @DataProvider(name = "InputsSearch")
+    public static Object[][] testRegistration2() throws Exception {
+        ArrayList<Object[]> out = new ArrayList<>();
+        Files.readAllLines(Paths.get("InputsSearch.csv")).stream().forEach(s -> {
+            String[] data = s.split(",");
+            out.add(new Object[]{data[0]});
+        });
+        return out.toArray(new Object[out.size()][]);
+    }
 
-
-    @Test(priority = 2,enabled = isTest1,groups = {"ie"})
-    public void testGiftsIconPageTest1() {
+    @Test(dataProvider = "InputsSearch")
+    public void testGiftsIconPageTest1(String inputsearch) {
         mainPage.clickPhotosPageLink();
         mainPage.javaWaitSec(3);
         String currentUrlPhotos = driver.getCurrentUrl();
         Assert.assertEquals(currentUrlPhotos, Data.expectedUrlGiftsSearch);
         driver.findElement(Locators.LINK_ICON_GIFTS).click();
         mainPage.javaWaitSec(3);
-        mainPage.ajaxSendKeys(driver.findElement(Locators.LINK_TEXT_FIELD),Data.inputsearch);
+        mainPage.ajaxSendKeys(driver.findElement(Locators.LINK_TEXT_FIELD),inputsearch);
         giftsPage.clickButtonSearch();
         mainPage.verifyLinkActive(Data.expectedUrlTeddy);
+        System.out.println(inputsearch);
     }
-    @Test(priority = 1,enabled = isTest2,groups = {"user","admin"})
+   /* @Test()
     public void testGiftsBasketPageTest2() {
         mainPage.clickGiftsPageLink();
         String currentUrlGifts = driver.getCurrentUrl();
@@ -32,6 +43,6 @@ public class GiftsPageTests extends BaseUI {
         System.out.println("We can see product!");
 
     }
-
+*/
 }
 

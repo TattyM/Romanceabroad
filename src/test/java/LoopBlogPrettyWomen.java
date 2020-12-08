@@ -4,12 +4,12 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class TestBlogPrettyWomenPageLoops extends BaseUI {
+public class LoopBlogPrettyWomen extends BaseUI {
     public static final boolean isTest13 = true;
     public static final boolean isTest14 = true;
 
     @Test(priority = 1, enabled = isTest13, groups = {"user", "admin"})
-    public void testBlogPageLoopTest13() {
+    public void verifyAllTabsBlogTest13() {
         String actualUrlBlog;
         String actualUrlBlogPage;
         mainPage.perfomClick(driver.findElement(Locators.LINK_BLOG));
@@ -41,7 +41,7 @@ public class TestBlogPrettyWomenPageLoops extends BaseUI {
     }
 
     @Test(priority = 2, enabled = isTest14, groups = {"ie"})
-    public void testPrettyWomenPageLoopTest14() {
+    public void verifyAllTabsPrettyWomenTest14() {
         String currentUrlSearch;
         mainPage.perfomClick(driver.findElement(Locators.LINK_PRETTY_WOMEN));
         currentUrlSearch = driver.getCurrentUrl();
