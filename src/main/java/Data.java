@@ -12,10 +12,14 @@ public class Data {
     public static final String code = "9474635";
 
     //JoinToday
-    public static final String email = "111@gmail.com";
+    public static final String email1 = "111@gmail.com";
+    public static final String email2 = "hohoyandex.ru";
+    public static final String email3 = "Tattylove@yahho.com";
     public static final String password = "868hb4";
-    public static final String username = "Tatty";
+    public static final String username1part = "Tatty";
+    public static final String username = MainPage.generateNewNumber(username1part, Data.lenthSecondPartOfUsename);
     public static final String phone = "755038748";
+    public static final int lenthSecondPartOfUsename = 5 ;
     public static final String day = "21";
     public static final String month = "Apr";
     public static final String year = "1995";

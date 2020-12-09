@@ -25,24 +25,24 @@
 
     </test>-->
 
-    <test name="GiftsTests">
+    <test name="RegistrationTests">
 
             <parameter name="browser" value="chrome"/>
         
         <groups>
-            <run>
+            <!--<run>
                 <exclude name="ie"  />
                 <include name="admin" />
                 <include name="user"  />
-            </run>
+            </run>-->
         </groups>
         <classes>
-            <class name ="GiftsTests">
-            <methods>
+            <class name ="RegistrationTests">
+            <!--<methods>
                 <include name=".*HowWeWork.*"/>
                 <include name=".*Women.*"/>
                 <exclude name=".*Search.*"/>
-            </methods>
+            </methods>-->
         </class>
         </classes>
     </test>

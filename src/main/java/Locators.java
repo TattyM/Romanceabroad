@@ -18,6 +18,7 @@ public class Locators {
     public static final By TEXT_EMAIL = By.cssSelector("input#email");
     public static final By TEXT_PASSWORD = By.cssSelector("input#password");
     public static final By TEXT_USERNAME = By.cssSelector("input#nickname");
+    public static final By TEXT_TOOLTIP = By.xpath("//div[@class='tooltip']");
     public static final By TEXT_PHONE = By.cssSelector("input[name='data[phone]']");
     public static final By BUTTON_NEXT = By.xpath("//button[@data-action='next-page'][text()='Next']");
     public static final By SELECT_DAY = By.cssSelector("#daySelect");
