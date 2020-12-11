@@ -1,23 +1,12 @@
+package com.romanceabroad.ui;
+
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
 
 public class GiftsTests extends BaseUI {
-    @DataProvider(name = "InputsSearch")
-    public static Object[][] testRegistration2() throws Exception {
-        ArrayList<Object[]> out = new ArrayList<>();
-        Files.readAllLines(Paths.get("InputsSearch.csv")).stream().forEach(s -> {
-            String[] data = s.split(",");
-            out.add(new Object[]{data[0]});
-        });
-        return out.toArray(new Object[out.size()][]);
-    }
 
-    @Test(dataProvider = "InputsSearch")
+    @Test(dataProvider = "InputsSearch",dataProviderClass = DataProviders.class)
     public void testGiftsIconPageTest1(String inputsearch) {
         mainPage.clickPhotosPageLink();
         mainPage.javaWaitSec(3);
@@ -30,7 +19,7 @@ public class GiftsTests extends BaseUI {
         mainPage.verifyLinkActive(Data.expectedUrlTeddy);
         System.out.println(inputsearch);
     }
-   /* @Test()
+    @Test()
     public void testGiftsBasketPageTest2() {
         mainPage.clickGiftsPageLink();
         String currentUrlGifts = driver.getCurrentUrl();
@@ -43,6 +32,5 @@ public class GiftsTests extends BaseUI {
         System.out.println("We can see product!");
 
     }
-*/
 }
 

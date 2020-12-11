@@ -1,3 +1,5 @@
+package com.romanceabroad.ui;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
@@ -11,7 +13,7 @@ public class LoopMainTests extends BaseUI {
     public static final boolean isTest5 = true;
     public static final boolean isTest6 = false;
     public static final boolean isTest7 = false;
-    public static final boolean isTest8 = true;
+
 
     @Test(priority = 1, enabled = isTest3, groups = {"ie", "admin"})
     public void testHowWeWorkTourToPagesTest3() {
@@ -126,16 +128,6 @@ public class LoopMainTests extends BaseUI {
     }
 
     @Test(priority = 5, enabled = isTest7, groups = {"ie", "user", "admin"})
-    public void testSignInTest7() {
-        String actualUrl;
-        actualUrl = driver.getCurrentUrl();
-        mainPage.clickValueOfList((Locators.LINK_LOOP_HEADER), "navbar-nav");
-        mainPage.ajaxClick(driver.findElement(Locators.LINK_SIGN_IN));
-        Assert.assertEquals(actualUrl, Data.expectedUrl);
-        System.out.println("Log in form is displayed!");
-    }
-
-    @Test(priority = 6, enabled = isTest8, groups = {"user"})
     public void smokeTestMainPage() {
         List<WebElement> mainTabs = driver.findElements(Locators.LINK_LOOP);
         for (int i = 0; i < mainTabs.size(); i++) {

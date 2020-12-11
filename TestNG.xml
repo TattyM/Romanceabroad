@@ -8,7 +8,7 @@
 
         <classes>
 
-            <class name ="LoopMainTests"/>
+            <class name ="com.romanceabroad.ui.LoopMainTests"/>
 
         </classes>
 
@@ -20,12 +20,12 @@
 
         <classes>
 
-            <class name ="LoopMainTests"/>
+            <class name ="com.romanceabroad.ui.LoopMainTests"/>
         </classes>
 
     </test>-->
 
-    <test name="RegistrationTests">
+    <test name="com.romanceabroad.ui.RegistrationTests">
 
             <parameter name="browser" value="chrome"/>
         
@@ -37,7 +37,7 @@
             </run>-->
         </groups>
         <classes>
-            <class name ="RegistrationTests">
+            <class name ="com.romanceabroad.ui.RegistrationTests">
             <!--<methods>
                 <include name=".*HowWeWork.*"/>
                 <include name=".*Women.*"/>
