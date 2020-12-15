@@ -200,7 +200,6 @@ public class BaseActions {
             }
         }
     }
-
     public String getAnyTitle() {
         String title = driver.findElement(Locators.LINK_TITLE).getText();
         return title;

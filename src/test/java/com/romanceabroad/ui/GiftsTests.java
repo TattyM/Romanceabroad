@@ -1,12 +1,14 @@
 package com.romanceabroad.ui;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
 public class GiftsTests extends BaseUI {
+    public static final boolean isTest2 = true;
+    public static final boolean isTest3 = true;
 
-    @Test(dataProvider = "InputsSearch",dataProviderClass = DataProviders.class)
+
+    @Test(dataProvider = "InputsSearch",dataProviderClass = DataProviders.class,priority = 1, enabled = isTest2, groups = {"ie"})
     public void testGiftsIconPageTest1(String inputsearch) {
         mainPage.clickPhotosPageLink();
         mainPage.javaWaitSec(3);
@@ -19,7 +21,7 @@ public class GiftsTests extends BaseUI {
         mainPage.verifyLinkActive(Data.expectedUrlTeddy);
         System.out.println(inputsearch);
     }
-    @Test()
+    @Test(priority = 2, enabled = isTest3, groups = {"user"})
     public void testGiftsBasketPageTest2() {
         mainPage.clickGiftsPageLink();
         String currentUrlGifts = driver.getCurrentUrl();

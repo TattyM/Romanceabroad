@@ -48,15 +48,10 @@ public class MainPage extends BaseActions {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(Locators.AUTOFILLING_FORM_LOCATION).sendKeys(town);
         clickValueOfList(Locators.LIST_VALUE_LOCATION, location);
-
-
     }
-
-
     public void clickGiftsPageLink() {
         WebElement pageGifts = driver.findElement(Locators.LINK_GIFTS);
         pageGifts.click();
-
     }
 
     public void clickBlogPageLink() {

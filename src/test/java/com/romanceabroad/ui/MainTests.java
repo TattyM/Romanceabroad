@@ -1,13 +1,16 @@
 package com.romanceabroad.ui;
 
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class MainTests extends BaseUI {
     public static final boolean isTest9 = false;
     public static final boolean isTest10 = true;
-    public static final boolean isTest11 = true;
+    public static final boolean isTest11 = false;
 
     @Test(priority = 1,enabled = isTest9,groups = {"user"})
     public void testSignInTest7() {
@@ -30,15 +33,13 @@ public class MainTests extends BaseUI {
         Assert.assertEquals(currentUrlBlog, Data.expectedUrlBlog);
 
     }
-    @Test(priority = 3,enabled = isTest11,groups = {"user"})
-    public void testPhotosPageTest10() {
-        mainPage.clickPhotosPageLink();
-        mainPage.javaWaitSec(3);
-        String currentUrlPhotos = driver.getCurrentUrl();
-        Assert.assertEquals(currentUrlPhotos, Data.expectedUrlPhotos);
-        mainPage.perfomClick(driver.findElement(Locators.BUTTON_ALBUMS));
-        mainPage.javaWaitSec(3);
-        photosPage.selectLanguageButton();
-        System.out.println(" Язык страницы - Русский !");
+    @Test(priority = 3, enabled = isTest11, groups = {"ie", "user", "admin"})
+    public void smokeTestMainPage() {
+        List<WebElement> mainTabs = driver.findElements(Locators.LINK_LOOP);
+        for (int i = 0; i < mainTabs.size(); i++) {
+            mainTabs.get(i).click();
+            driver.get(Data.mainUrl);
+            mainTabs = driver.findElements(Locators.LINK_LOOP);
+        }
     }
 }

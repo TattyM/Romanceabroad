@@ -5,9 +5,11 @@ import org.testng.annotations.Test;
 
 
 public class RegistrationTests extends BaseUI {
+    public static final boolean isTest14 = true;
+    public static final boolean isTest15 = true;
 
 
-    @Test(dataProvider = "JoinToday", dataProviderClass = DataProviders.class)
+    @Test(dataProvider = "JoinToday", dataProviderClass = DataProviders.class, priority = 1, enabled = isTest14, groups = {"ie"})
     public void testRegistration(String email, String username, boolean requirement) {
         System.out.println(email);
         mainPage.ajaxScroll(driver.findElement(Locators.LINK_JOIN_TODAY));
@@ -22,7 +24,7 @@ public class RegistrationTests extends BaseUI {
         }
     }
 
-    @Test(dataProvider = "JoinToday2", dataProviderClass = DataProviders.class)
+    @Test(dataProvider = "JoinToday2", dataProviderClass = DataProviders.class, priority = 2, enabled = isTest15, groups = {"ie"})
     public void testRegistration2(String email, String password, String day, String month, String year, String phone, String town, String location) {
         mainPage.ajaxScroll(driver.findElement(Locators.LINK_JOIN_TODAY));
         mainPage.clickJoinTodayButton();
