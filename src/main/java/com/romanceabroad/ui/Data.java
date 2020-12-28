@@ -5,6 +5,12 @@ import org.openqa.selenium.By;
 public class Data {
     public static final String mainUrl = "https://romanceabroad.com/";
 
+    //User Profile
+    public static final String userinfo = "06 December 2017";
+    public static final String views = "Views count";
+    public static final String element = "//style";
+    public static final String attribute = "//img";
+
     //Contact us
     public static final String urlContactUs = "https://romanceabroad.com/tickets/";
     public static final String name = "Pedro666";
@@ -36,12 +42,16 @@ public class Data {
 
     //PhotosPage
     public static final String expectedUrlPhotos = "https://romanceabroad.com/media/index";
+    public static final String expectedUrlUserProfile = "https://romanceabroad.com/users/view/305/profile";
+    public static final String expectedUrlTabWall = "https://romanceabroad.com/users/view/305/wall";
+    public static final String expectedUrlTabGallery = "https://romanceabroad.com/users/view/305/gallery";
     public static final String expectedTitleAllTabs = "Ukrainian women photos";
     public static final String expectedTitleGallery = "Gallery";
     public static final String expectedTitlePhotoGallery = "Photo gallery";
     public static final String expectedTitleVideoGallery = "Video gallery";
     public static final String expectedTitleGalleryAlbums = "Gallery albums";
-
+    public static final String expectedTitleUser = "Tafita";
+    public static final String textMedia = "On our website you have access to photos of all different kinds of women";
 
     //BlogPage
     public static final String expectedUrlBlog = "https://romanceabroad.com/content/view/blog";
@@ -49,9 +59,7 @@ public class Data {
     //Gifts Page
     public static final String currentUrlGifts = "https://romanceabroad.com/store/category-sweets";
 
-
     //Gifts Search Page
-    public static final String expectedUrlGiftsSearch = "https://romanceabroad.com/media/index";
     public static final String expectedUrlTeddy = "https://romanceabroad.com/store/sweets/11-teddy_bear";
     public static final String inputsearch = "Teddy";
 

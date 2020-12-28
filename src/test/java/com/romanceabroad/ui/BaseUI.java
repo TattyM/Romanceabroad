@@ -23,6 +23,7 @@ public class BaseUI {
     BlogPage blogPage;
     PhotosPage photosPage;
     ContactUsPage contactUsPage;
+    UserProfilePage userProfilePage;
     SoftAssert softAssert = new SoftAssert();
 
     @BeforeMethod(groups = {"user","admin","ie"}, alwaysRun = true)
@@ -55,6 +56,7 @@ public class BaseUI {
         blogPage = new BlogPage(driver, wait);
         photosPage = new PhotosPage(driver, wait);
         contactUsPage = new ContactUsPage(driver, wait);
+        userProfilePage = new UserProfilePage(driver, wait);
         driver.manage().window().maximize();
         driver.get(mainUrl);
     }

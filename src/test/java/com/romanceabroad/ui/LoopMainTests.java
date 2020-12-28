@@ -25,15 +25,13 @@ public class LoopMainTests extends BaseUI {
         for (int i = 0; i < links.size(); i++) {
             String title = links.get(i).getText();
             System.out.println(title);
-            mainPage.ajaxClick(links.get(i));
+            mainPage.perfomClick(links.get(i));
             if (title.contains("WORK")) {
                 mainPage.javaWaitSec(3);
                 actualTitle = driver.findElement(Locators.LINK_TITLE).getText();
                 actualUrlHowWeWork = driver.getCurrentUrl();
-                mainPage.ajaxScroll(driver.findElement(Locators.PAGE_FOOTER));
                 mainPage.javaWaitSec(5);
                 Assert.assertEquals(Data.expectedTitleWork, actualTitle);
-                mainPage.javaWaitSec(5);
                 Assert.assertEquals(actualUrlHowWeWork, Data.expectedUrlHowWeWork);
                 if (actualUrlHowWeWork.contains("#")) {
                     Assert.fail("It contains #");

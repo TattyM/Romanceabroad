@@ -49,6 +49,10 @@ public class MainPage extends BaseActions {
         driver.findElement(Locators.AUTOFILLING_FORM_LOCATION).sendKeys(town);
         clickValueOfList(Locators.LIST_VALUE_LOCATION, location);
     }
+    public void clickHowWeWorkPageLink(){
+        driver.findElement(Locators.LINK_HOW_WE_WORK).click();
+    }
+
     public void clickGiftsPageLink() {
         WebElement pageGifts = driver.findElement(Locators.LINK_GIFTS);
         pageGifts.click();

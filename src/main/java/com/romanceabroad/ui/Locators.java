@@ -4,6 +4,23 @@ import org.openqa.selenium.By;
 
 public class Locators {
 
+    //User Profile
+    public static final By USER_LOGIN = By.xpath("//a[@id='ajax_login_link']");
+    public static final By USER_FORM_EMAIL = By.xpath("//input[@id='email']");
+    public static final By USER_FORM_PASSWORD = By.xpath("//input[@id='password']");
+    public static final By USER_FORM_SING_IN = By.xpath(" //button[normalize-space()='Sign in']");
+    public static final By USER_FIND_PEOPLE = By.xpath("//button[@id='main_search_button_user_line']");
+    public static final By USER_LOOP = By.xpath("//div[@class='profile-menu clearfix']//ul//li//a['data-pjax-no-scroll=1']");
+    public static final By USER_PROFILE_PICTURE = By.xpath("//span[@class='g-pic-border g-rounded']");
+    public static final By USER_PROFILE_GALLERY_PICTURE = By.xpath("//a[@class='g-pic-border g-rounded g-users-gallery__photo-img']");
+    public static final By USER_PROFILE_NEW_USERS = By.xpath("//div[@id='active_users_inner']");
+    public static final By USER_INFO = By.xpath("//span[@class='wall-post-date']");
+    public static final By USER_PROFILE_INFO = By.xpath("//span[normalize-space()='Personal information']");
+    public static final By BUTTON_MENU = By.xpath("//button[@id='services-menu']");
+    public static final By LINK_DONATE = By.xpath("//div[@class='popover-content']//a[@id='donate_link_send_money']");
+    public static final By LINK_DROP_DOWN_LIST = By.xpath("//select[@class='form-control']");
+    public static final By BUTTON_CLOSE_FORM = By.xpath("//div[@class='load_content_close clearfix']//i[@class='fa fa-times']");
+
     //Contact Us
     public static final By SELECT_REASON = By.xpath("//option[contains(text(),'Other')]");
     public static final By SELECT_NAME = By.xpath("//input[@name='user_name']");
@@ -46,10 +63,14 @@ public class Locators {
     public static final By BUTTON_ALBUMS = By.xpath("//a[@href='https://romanceabroad.com/media/albums']");
     public static final By BUTTON_РУССКИЙ = By.xpath("//a[contains(text(),'Русский')]");
     public static final By LINK_TAB_USER_PROFILE = By.xpath("//ul[@id='gallery_filters']//a");
+    public static final By TEXT_BLOCK = By.xpath("//div[@class='g-flatty-block']");
+    public static final By BLOCK_PICTURES = By.xpath("//span[@data-click='album']");
 
     //BlogPage
     public static final By LINK_BLOG = By.xpath("//a[contains(text(),'BLOG')]");
+    public static final By LINK_HOW_WE_WORK =  By.xpath("//a[@href='https://romanceabroad.com/content/view/how-it-works']");
     public static final By LINK_KHARKOV_AGENCY = By.xpath("//a[contains(text(),'Kharkov dating agency')]");
+    public static final By LINK_OF_ARTICLES = By.xpath("//ul[@class='nav nav-pills nav-stacked content-pages-tree']//li");
 
     //Gifts Page
     public static final By LINK_GIFTS = By.xpath("//a[text()='GIFTS']");

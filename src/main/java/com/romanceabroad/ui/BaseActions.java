@@ -6,7 +6,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.math.BigInteger;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -135,12 +134,13 @@ public class BaseActions {
 
     //Method for random choice from drop down list
     public void selectItemDropDownRandomOption(By locator, String dropDownName) {
+
         try {
             WebElement element = driver.findElement(locator);
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
             Select select = new Select(driver.findElement(locator));
-            select.selectByIndex((int) (Math.random() * (select.getOptions().size() - 1)) + 1);
-            System.out.println(dropDownName + ": " + select.getFirstSelectedOption().getText());
+            select.selectByIndex((int) (Math.random() * (select.getOptions().size() - 10)) + 10);
+            System.out.println(dropDownName + " : " + select.getFirstSelectedOption().getText());
         } catch (NoSuchElementException e) {
         }
     }

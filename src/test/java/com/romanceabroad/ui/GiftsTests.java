@@ -13,7 +13,7 @@ public class GiftsTests extends BaseUI {
         mainPage.clickPhotosPageLink();
         mainPage.javaWaitSec(3);
         String currentUrlPhotos = driver.getCurrentUrl();
-        Assert.assertEquals(currentUrlPhotos, Data.expectedUrlGiftsSearch);
+        Assert.assertEquals(currentUrlPhotos, Data.expectedUrlPhotos);
         driver.findElement(Locators.LINK_ICON_GIFTS).click();
         mainPage.javaWaitSec(3);
         mainPage.ajaxSendKeys(driver.findElement(Locators.LINK_TEXT_FIELD),inputsearch);
