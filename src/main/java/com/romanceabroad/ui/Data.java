@@ -11,6 +11,12 @@ public class Data {
     public static final String element = "//style";
     public static final String attribute = "//img";
 
+    //SingIn
+    public static final String expectedUrlSingIn = "//romanceabroad.com/users/login_form";
+    public static final String emptyField = "";
+    public static final String email4 = "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
+    public static final String password1 = " ";
+
     //Contact us
     public static final String urlContactUs = "https://romanceabroad.com/tickets/";
     public static final String name = "Pedro666";
@@ -27,7 +33,7 @@ public class Data {
     public static final String username1part = "Tatty";
     public static final String username = MainPage.generateNewNumber(username1part, Data.lenthSecondPartOfUsename);
     public static final String phone = "755038748";
-    public static final int lenthSecondPartOfUsename = 5 ;
+    public static final int lenthSecondPartOfUsename = 5;
     public static final String day = "21";
     public static final String month = "Apr";
     public static final String year = "1995";

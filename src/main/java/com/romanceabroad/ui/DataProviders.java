@@ -18,6 +18,16 @@ public class DataProviders {
         };
     }
 
+    @DataProvider(name = "SingIn")
+    public static Object[][] testSingInTest() {
+        return new Object[][]{
+                {Data.emptyField, Data.emptyField}, // blank email and password fields
+                {Data.email1, Data.emptyField},     // correct email and blank password
+                {Data.emptyField, Data.username},   // blank email and correct password
+                {Data.email4, Data.password1},      // incorrect email and password
+        };
+    }
+
     @DataProvider(name = "Search")
     public static Object[][] testSearchInputs() {
         return new Object[][]{

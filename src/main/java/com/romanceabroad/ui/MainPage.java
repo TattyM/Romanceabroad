@@ -1,9 +1,11 @@
 package com.romanceabroad.ui;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.concurrent.TimeUnit;
 
 
@@ -26,7 +28,8 @@ public class MainPage extends BaseActions {
         driver.findElement(Locators.TEXT_PASSWORD).sendKeys(password);
 
     }
-    public void clickButtonNext(){
+
+    public void clickButtonNext() {
         wait.until(ExpectedConditions.elementToBeClickable(Locators.BUTTON_NEXT));
         driver.findElement(Locators.BUTTON_NEXT).click();
     }
@@ -49,7 +52,8 @@ public class MainPage extends BaseActions {
         driver.findElement(Locators.AUTOFILLING_FORM_LOCATION).sendKeys(town);
         clickValueOfList(Locators.LIST_VALUE_LOCATION, location);
     }
-    public void clickHowWeWorkPageLink(){
+
+    public void clickHowWeWorkPageLink() {
         driver.findElement(Locators.LINK_HOW_WE_WORK).click();
     }
 
@@ -68,4 +72,19 @@ public class MainPage extends BaseActions {
         pagePhotos.click();
     }
 
+    public void clickSingInPageLink() {
+        WebElement buttonSingIn = driver.findElement(Locators.LINK_SIGN_IN);
+        buttonSingIn.click();
+    }
+
+    public void sendKeysEmailAndPassword(String email, String password) {
+        driver.findElement(Locators.SIGN_IN_EMAIL).sendKeys(email);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.findElement(Locators.SIGN_IN_PASSWORD).sendKeys(password);
+        driver.findElement(Locators.BUTTON_SING_IN).click();
+        WebElement errorAlert = driver.findElement(Locators.TEXT_ERROR_MESSAGE);
+        if (errorAlert.isDisplayed()) {
+            System.out.println("Error massage is displayed!");
+        }
+    }
 }

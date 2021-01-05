@@ -21,6 +21,15 @@ public class Locators {
     public static final By LINK_DROP_DOWN_LIST = By.xpath("//select[@class='form-control']");
     public static final By BUTTON_CLOSE_FORM = By.xpath("//div[@class='load_content_close clearfix']//i[@class='fa fa-times']");
 
+    //SingIn
+    public static final By BUTTON_SING_IN = By.xpath("//button[contains(text(),'Sign in')]");
+    public static final By SIGN_IN_EMAIL = By.xpath("//div[@class='col-xs-8']//input[@id='email']");
+    public static final By SIGN_IN_PASSWORD = By.xpath("//div[@class='col-xs-8']//input[@id='password']");
+    public static final By TEXT_ERROR_MESSAGE = By.xpath("//div[@class='error alert-danger alert-warning_pop_']");
+
+
+
+
     //Contact Us
     public static final By SELECT_REASON = By.xpath("//option[contains(text(),'Other')]");
     public static final By SELECT_NAME = By.xpath("//input[@name='user_name']");
