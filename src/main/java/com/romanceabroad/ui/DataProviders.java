@@ -37,6 +37,13 @@ public class DataProviders {
                 {"37", "79", "Registration date"},
         };
     }
+    @DataProvider(name = "ContactUsForm")
+    public static Object[][] testFormFooter() {
+        return new Object[][]{
+                {Data.reason2, Data.name, Data.email1,Data.select,Data.message,Data.code},
+
+        };
+    }
 
     @DataProvider(name = "JoinToday2")
     public static Object[][] testRegistration2() throws Exception {

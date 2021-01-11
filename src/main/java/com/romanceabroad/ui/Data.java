@@ -12,7 +12,7 @@ public class Data {
     public static final String attribute = "//img";
 
     //SingIn
-    public static final String expectedUrlSingIn = "//romanceabroad.com/users/login_form";
+    public static final String expectedUrlSingIn = "https://romanceabroad.com/users/login_form";
     public static final String emptyField = "";
     public static final String email4 = "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
     public static final String password1 = " ";
@@ -21,6 +21,7 @@ public class Data {
     public static final String urlContactUs = "https://romanceabroad.com/tickets/";
     public static final String name = "Pedro666";
     public static final String reason = "Other";
+    public static final String reason2 = "Pre-Sales Questions";
     public static final String subject = "Did not like any women";
     public static final String message = "Dear Administrator of site Romance Abroad do you have any other women to show? Couldn't make my choice !";
     public static final String code = "9474635";
@@ -64,6 +65,19 @@ public class Data {
 
     //Gifts Page
     public static final String currentUrlGifts = "https://romanceabroad.com/store/category-sweets";
+
+    //Footer Tabs
+    public static final String expectedTitleContactUs = "Contact administrator";
+    public static final String expectedTitleSitemap = "Site map";
+    public static final String expectedTitlePrivacy = "Privacy Policy";
+    public static final String expectedTitleTerms = "Terms of use";
+    public static final String expectedUrlContent = "https://romanceabroad.com/content/";
+    public static final String expectedUrlStart = "https://romanceabroad.com/m/#!/start";
+    public static final String textPageNews = "No news yet";
+    public static final String day1 = "22";
+    public static final String month1  = "8";
+    public static final String year1 = "17";
+
 
     //Gifts Search Page
     public static final String expectedUrlTeddy = "https://romanceabroad.com/store/sweets/11-teddy_bear";

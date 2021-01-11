@@ -18,7 +18,6 @@ public class MainPage extends BaseActions {
     public void clickJoinTodayButton() {
         WebElement linkJoinToday = driver.findElement(Locators.LINK_JOIN_TODAY);
         linkJoinToday.click();
-
     }
 
     public void firstPartOfRegistration(String email, String password) {
@@ -33,7 +32,6 @@ public class MainPage extends BaseActions {
         wait.until(ExpectedConditions.elementToBeClickable(Locators.BUTTON_NEXT));
         driver.findElement(Locators.BUTTON_NEXT).click();
     }
-
 
     public void secondPartOfRegistration(String username, String month, String day, String year, String phone, String town, String location) {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -54,6 +52,7 @@ public class MainPage extends BaseActions {
     }
 
     public void clickHowWeWorkPageLink() {
+
         driver.findElement(Locators.LINK_HOW_WE_WORK).click();
     }
 
@@ -87,4 +86,43 @@ public class MainPage extends BaseActions {
             System.out.println("Error massage is displayed!");
         }
     }
+
+    public void testSingInForm() {
+        driver.findElement(Locators.LINK_LOGIN_FORM).click();
+        driver.findElement(Locators.TEXT_EMAIL).sendKeys(Data.email2);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.findElement(Locators.TEXT_PASSWORD).sendKeys(Data.password);
+        driver.findElement(Locators.SING_IN_BUTTON).click();
+        WebElement errorAlert = driver.findElement(Locators.TEXT_ERROR_MESSAGE);
+        if (errorAlert.isDisplayed()) {
+            System.out.println("---Error massage is displayed!---");
+        }
+    }
+
+    public void verifyLinkPageContent() {
+        WebElement linkPage = driver.findElement(Locators.LINK_PAGE_CONTENT);
+        linkPage.click();
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+    }
+
+    public void linkSingInStartPage() {
+        driver.findElement(Locators.LINK_SING_IN_FORM).click();
+        System.out.println("---Registration form is displayed!---");
+    }
+
+    public void testRegistrationFormStartPage() {
+        driver.findElement(Locators.BUTTON_GENDER).click();
+        driver.findElement(Locators.INPUT_USERNAME).sendKeys(Data.name);
+        driver.findElement(Locators.INPUT_EMAIL).sendKeys(Data.email1);
+        driver.findElement(Locators.INPUT_PASSWORD).sendKeys(Data.password);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        getDropDownListByValue(Locators.INPUT_DAY, Data.day1);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        getDropDownListByValue(Locators.INPUT_MONTH, Data.month1);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        getDropDownListByValue(Locators.INPUT_YEAR, Data.year1);
+        clickUnselectedCheckbox(Locators.SELECT_CHECKBOX);
+        driver.findElement(Locators.INPUT_SUBMIT).click();
+    }
 }
+

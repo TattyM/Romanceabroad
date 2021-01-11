@@ -28,8 +28,6 @@ public class Locators {
     public static final By TEXT_ERROR_MESSAGE = By.xpath("//div[@class='error alert-danger alert-warning_pop_']");
 
 
-
-
     //Contact Us
     public static final By SELECT_REASON = By.xpath("//option[contains(text(),'Other')]");
     public static final By SELECT_NAME = By.xpath("//input[@name='user_name']");
@@ -86,6 +84,25 @@ public class Locators {
     public static final By LINK_ICON_GIFTS = By.xpath("//a[contains(text(),'Gifts')]");
     public static final By LINK_TEXT_FIELD = By.cssSelector("input#search_product");
     public static final By BUTTON_SEARCH_GIFT = By.cssSelector("#search_friend");
+
+    //Footer Tabs
+    public static final By LIST_FOOTER = By.xpath("//div[@class='footer-menu']//ul//li//a");
+    public static final By LINK_LOGIN_FORM = By.xpath("//a[@href='https://romanceabroad.com/users/login_form']");
+    public static final By LINK_SING_IN_FORM = By.xpath("//button[normalize-space()='Sign up']");
+    public static final By LINK_PAGE_CONTENT = By.xpath("//span[contains(text(),'Pages content')]");
+    public static final By SING_IN_BUTTON = By.xpath("//button[normalize-space()='Sign in']");
+    public static final By TEXT_PAGE = By.xpath("//div[@class='empty']");
+    public static final By PHOTOS_BLOCK = By.xpath("//div[@class='pre-main-inner-content']");
+    public static final By BUTTON_GENDER = By.xpath("//button[normalize-space()='Man']");
+    public static final By INPUT_USERNAME = By.cssSelector("input[placeholder='Username']");
+    public static final By INPUT_EMAIL = By.cssSelector("input[placeholder='Email']");
+    public static final By INPUT_PASSWORD = By.cssSelector(" input[placeholder='Password']");
+    public static final By INPUT_DAY = By.cssSelector("select[placeholder='Day']");
+    public static final By INPUT_MONTH = By.cssSelector("select[placeholder='Month']");
+    public static final By INPUT_YEAR = By.cssSelector("select[placeholder='Year']");
+    public static final By SELECT_CHECKBOX = By.cssSelector("input[type='checkbox']");
+    public static final By INPUT_SUBMIT = By.cssSelector("button[type='submit']");
+
 
     // ConditionsArrayListsLoopsTestsExtended
     public static final By LINK_TOUR_TO = By.xpath("//li//a[@href='https://romanceabroad.com/store/sweets/20-tour_to_ukraine']");

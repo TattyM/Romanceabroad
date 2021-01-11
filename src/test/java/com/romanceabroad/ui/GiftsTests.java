@@ -1,4 +1,5 @@
 package com.romanceabroad.ui;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -8,7 +9,7 @@ public class GiftsTests extends BaseUI {
     public static final boolean isTest3 = true;
 
 
-    @Test(dataProvider = "InputsSearch",dataProviderClass = DataProviders.class,priority = 1, enabled = isTest2, groups = {"ie"})
+    @Test(dataProvider = "InputsSearch", dataProviderClass = DataProviders.class, priority = 1, enabled = isTest2, groups = {"ie"})
     public void testGiftsIconPageTest1(String inputsearch) {
         mainPage.clickPhotosPageLink();
         mainPage.javaWaitSec(3);
@@ -16,11 +17,12 @@ public class GiftsTests extends BaseUI {
         Assert.assertEquals(currentUrlPhotos, Data.expectedUrlPhotos);
         driver.findElement(Locators.LINK_ICON_GIFTS).click();
         mainPage.javaWaitSec(3);
-        mainPage.ajaxSendKeys(driver.findElement(Locators.LINK_TEXT_FIELD),inputsearch);
+        mainPage.ajaxSendKeys(driver.findElement(Locators.LINK_TEXT_FIELD), inputsearch);
         giftsPage.clickButtonSearch();
         mainPage.verifyLinkActive(Data.expectedUrlTeddy);
         System.out.println(inputsearch);
     }
+
     @Test(priority = 2, enabled = isTest3, groups = {"user"})
     public void testGiftsBasketPageTest2() {
         mainPage.clickGiftsPageLink();
@@ -32,7 +34,8 @@ public class GiftsTests extends BaseUI {
         mainPage.javaWaitSec(3);
         mainPage.perfomClick(driver.findElement(Locators.LINK_FRUITS));
         System.out.println("We can see product!");
-
     }
+
 }
+
 
