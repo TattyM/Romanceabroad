@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-01-11T23:26:39Z" name="TestSuite" finished-at="2021-01-11T23:29:45Z" duration-ms="185419">
+    <groups>
+      <group name="ie">
+        <method signature="GiftsTests.testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@179ece50]" name="testGiftsIconPageTest1" class="com.romanceabroad.ui.GiftsTests"/>
+      </group> <!-- ie -->
+      <group name="user">
+        <method signature="GiftsTests.testGiftsBasketPageTest2()[pri:2, instance:com.romanceabroad.ui.GiftsTests@179ece50]" name="testGiftsBasketPageTest2" class="com.romanceabroad.ui.GiftsTests"/>
+      </group> <!-- user -->
+    </groups>
+    <test started-at="2021-01-11T23:26:39Z" name="Chrome Tests Cases" finished-at="2021-01-11T23:29:45Z" duration-ms="185419">
+      <class name="com.romanceabroad.ui.GiftsTests">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:26:39Z" name="setup" finished-at="2021-01-11T23:26:55Z" duration-ms="15548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:26:55Z" name="testGiftsIconPageTest1" data-provider="InputsSearch" finished-at="2021-01-11T23:27:15Z" duration-ms="20108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[spa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGiftsIconPageTest1 -->
+        <test-method is-config="true" signature="afterActions()[pri:0, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:27:15Z" name="afterActions" finished-at="2021-01-11T23:27:15Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:27:15Z" name="setup" finished-at="2021-01-11T23:27:29Z" duration-ms="14191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:27:29Z" name="testGiftsIconPageTest1" data-provider="InputsSearch" finished-at="2021-01-11T23:27:46Z" duration-ms="17353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Flowers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGiftsIconPageTest1 -->
+        <test-method is-config="true" signature="afterActions()[pri:0, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:27:46Z" name="afterActions" finished-at="2021-01-11T23:27:46Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:27:46Z" name="setup" finished-at="2021-01-11T23:28:01Z" duration-ms="14210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:28:01Z" name="testGiftsIconPageTest1" data-provider="InputsSearch" finished-at="2021-01-11T23:28:18Z" duration-ms="17369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[teddy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGiftsIconPageTest1 -->
+        <test-method is-config="true" signature="afterActions()[pri:0, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:28:18Z" name="afterActions" finished-at="2021-01-11T23:28:18Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:28:18Z" name="setup" finished-at="2021-01-11T23:28:32Z" duration-ms="13695" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:28:32Z" name="testGiftsIconPageTest1" data-provider="InputsSearch" finished-at="2021-01-11T23:28:48Z" duration-ms="16647" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bear]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGiftsIconPageTest1 -->
+        <test-method is-config="true" signature="afterActions()[pri:0, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:28:48Z" name="afterActions" finished-at="2021-01-11T23:28:48Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:28:48Z" name="setup" finished-at="2021-01-11T23:29:02Z" duration-ms="13961" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:29:02Z" name="testGiftsIconPageTest1" data-provider="InputsSearch" finished-at="2021-01-11T23:29:19Z" duration-ms="16582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rose]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGiftsIconPageTest1 -->
+        <test-method is-config="true" signature="afterActions()[pri:0, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:29:19Z" name="afterActions" finished-at="2021-01-11T23:29:19Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:29:19Z" name="setup" finished-at="2021-01-11T23:29:32Z" duration-ms="13224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.GiftsTests.testGiftsBasketPageTest2()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGiftsBasketPageTest2()[pri:2, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:29:32Z" name="testGiftsBasketPageTest2" finished-at="2021-01-11T23:29:45Z" duration-ms="12482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGiftsBasketPageTest2 -->
+        <test-method is-config="true" signature="afterActions()[pri:0, instance:com.romanceabroad.ui.GiftsTests@179ece50]" started-at="2021-01-11T23:29:45Z" name="afterActions" finished-at="2021-01-11T23:29:45Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+      </class> <!-- com.romanceabroad.ui.GiftsTests -->
+    </test> <!-- Chrome Tests Cases -->
+  </suite> <!-- TestSuite -->
+</testng-results>

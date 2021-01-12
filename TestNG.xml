@@ -1,34 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="TestSuite" parallel="none" >
+<suite name="TestSuite" parallel="none">    <!--"tests" thread-count="3"-->
 
-    <!--<test name="IETestCases">
+    <test name="Chrome Tests Cases">
 
-        <parameter name="browser" value="ie"/>
+        <parameter name="browser" value="chrome"/>
 
-        <classes>
-
-            <class name ="com.romanceabroad.ui.LoopMainTests"/>
-
-        </classes>
-
-    </test>
-
-    <test name="FirefoxTestCases">
-
-        <parameter name="browser" value="firefox"/>
-
-        <classes>
-
-            <class name ="com.romanceabroad.ui.LoopMainTests"/>
-        </classes>
-
-    </test>-->
-
-    <test name="com.romanceabroad.ui.RegistrationTests">
-
-            <parameter name="browser" value="chrome"/>
-        
         <groups>
             <!--<run>
                 <exclude name="ie"  />
@@ -37,14 +14,37 @@
             </run>-->
         </groups>
         <classes>
-            <class name ="com.romanceabroad.ui.RegistrationTests">
-            <!--<methods>
-                <include name=".*HowWeWork.*"/>
-                <include name=".*Women.*"/>
-                <exclude name=".*Search.*"/>
-            </methods>-->
-        </class>
+            <class name ="com.romanceabroad.ui.GiftsTests">
+                <!--<methods>
+                    <include name=".*HowWeWork.*"/>
+                    <include name=".*Women.*"/>
+                    <exclude name=".*Search.*"/>
+                </methods>-->
+            </class>
         </classes>
     </test>
 
+   <!-- <test name="IE Test Cases">
+
+        <parameter name="browser" value="ie"/>
+
+        <classes>
+
+            <class name ="com.romanceabroad.ui.GiftsTests"/>
+
+        </classes>
+
+    </test>
+
+    <test name="Firefox Test Cases">
+
+        <parameter name="browser" value="firefox"/>
+
+        <classes>
+
+            <class name ="com.romanceabroad.ui.GiftsTests"/>
+        </classes>
+
+    </test>
+-->
 </suite>
