@@ -13,8 +13,8 @@ public class DataProviders {
     public static Object[][] testRegistration() {
         return new Object[][]{
                 {Data.email1, Data.username, true},
-                {Data.email2, Data.username, false},
-                {Data.email3, Data.username, true}
+                //{Data.email2, Data.username, false},
+                //{Data.email3, Data.username, true}
         };
     }
 

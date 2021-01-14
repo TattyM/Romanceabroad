@@ -15,6 +15,7 @@ public class SingInTests extends BaseUI {
     @Video(name = "SingIn")
     @Test(dataProvider = "SingIn", dataProviderClass = DataProviders.class, priority = 1, enabled = isTest22, groups = {"ie"})
     public void negativeTestsSingIn(String email, String password) {
+        Reports.log("Test Sing In Form");
         mainPage.clickSingInPageLink();
         mainPage.javaWaitSec(3);
         mainPage.sendKeysEmailAndPassword(email, password);
