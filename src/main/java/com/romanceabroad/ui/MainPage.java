@@ -101,6 +101,7 @@ public class MainPage extends BaseActions {
     }
 
     public void clickPhotosPageLink() {
+        Reports.log("Click Photo page");
         WebElement pagePhotos = driver.findElement(Locators.LINK_PHOTOS);
         pagePhotos.click();
     }
@@ -111,10 +112,14 @@ public class MainPage extends BaseActions {
     }
 
     public void sendKeysEmailAndPassword(String email, String password) {
+        Reports.log("Type user email" + email);
         driver.findElement(Locators.SIGN_IN_EMAIL).sendKeys(email);
+        Reports.log("Type user password" + password);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(Locators.SIGN_IN_PASSWORD).sendKeys(password);
+        Reports.log("Click sing in button");
         driver.findElement(Locators.BUTTON_SING_IN).click();
+        Reports.log("Check presents of error massage");
         WebElement errorAlert = driver.findElement(Locators.TEXT_ERROR_MESSAGE);
         if (errorAlert.isDisplayed()) {
             System.out.println("Error massage is displayed!");

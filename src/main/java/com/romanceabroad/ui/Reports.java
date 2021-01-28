@@ -32,11 +32,11 @@ public class Reports {
         LocalDateTime ldt = LocalDateTime.now();
         String formatttedDate = ldt.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH-mm-ss"));
 
-//        if (jenkinsOption) {
-//            currentTestSuiteResultsPath = "Suite/";
-//        } else {
+        if (jenkinsOption) {
+            currentTestSuiteResultsPath = "Suite/";
+        } else {
             currentTestSuiteResultsPath = "Suite " + formatttedDate + "/";
-        //}
+        }
 
         new File(ROOT_PATH + currentTestSuiteResultsPath).mkdir();
         htmlReporter = new ExtentHtmlReporter(ROOT_PATH + currentTestSuiteResultsPath + "report.html");

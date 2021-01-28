@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="833.147" tests="14" errors="0" skipped="6" failures="6">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\tatta\GitHub\RomanceAbroadR\Romanceabroad\target\test-classes;C:\Users\tatta\GitHub\RomanceAbroadR\Romanceabroad\target\classes;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\aventstack\extentreports\3.1.5\extentreports-3.1.5.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\automation-remarks\video-recorder-testng\2.0\video-recorder-testng-2.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\automation-remarks\video-recorder-core\2.0\video-recorder-core-2.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\aeonbits\owner\owner-java8\1.0.10\owner-java8-1.0.10.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\aeonbits\owner\owner\1.0.10\owner-1.0.10.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\zeroturnaround\zt-exec\1.10\zt-exec-1.10.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-io\commons-io\1.4\commons-io-1.4.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-api\1.7.2\slf4j-api-1.7.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\awaitility\awaitility\3.1.6\awaitility-3.1.6.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Windows\system32\config\systemprofile\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\json\json\20180813\json-20180813.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin"/>
+    <property name="sun.java.command" value="C:\Windows\Temp\surefire7445506812077037713\surefirebooter2683459968567128360.jar C:\Windows\Temp\surefire7445506812077037713 2021-01-21T16-35-31_803-jvmRun1 surefire14031587276215135843tmp surefire_04763406032786727083tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\tatta\GitHub\RomanceAbroadR\Romanceabroad\target\test-classes;C:\Users\tatta\GitHub\RomanceAbroadR\Romanceabroad\target\classes;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\aventstack\extentreports\3.1.5\extentreports-3.1.5.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\automation-remarks\video-recorder-testng\2.0\video-recorder-testng-2.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\automation-remarks\video-recorder-core\2.0\video-recorder-core-2.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\aeonbits\owner\owner-java8\1.0.10\owner-java8-1.0.10.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\aeonbits\owner\owner\1.0.10\owner-1.0.10.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\zeroturnaround\zt-exec\1.10\zt-exec-1.10.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-io\commons-io\1.4\commons-io-1.4.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-api\1.7.2\slf4j-api-1.7.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\awaitility\awaitility\3.1.6\awaitility-3.1.6.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Windows\system32\config\systemprofile\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\json\json\20180813\json-20180813.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Windows\system32\config\systemprofile"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.8"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\tatta\GitHub\RomanceAbroadR\Romanceabroad"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Windows\Temp\surefire7445506812077037713\surefirebooter2683459968567128360.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.8+10-LTS"/>
+    <property name="user.name" value="DESKTOP-F0URKIS$"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Windows\system32\config\systemprofile\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Windows\TEMP\"/>
+    <property name="java.version" value="11.0.8"/>
+    <property name="user.dir" value="C:\Users\tatta\GitHub\RomanceAbroadR\Romanceabroad"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.3/bin;C:\Program Files\Java\jdk-11.0.8/bin;C:\Program Files\Java\jdk-11.0.8/bin;C:\sql_course\dbhomeXE\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-11.0.8\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.8+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="setup" classname="com.romanceabroad.ui.ContactUsTests" time="604.901">
+    <failure message="session not created&#10;from timeout: Timed out receiving message from renderer: 600.000&#10;  (Session info: chrome=87.0.4280.141)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-F0URKIS&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;	Ordinal0 [0x0076ECE3+3337443]&#10;	Ordinal0 [0x0064F041+2158657]&#10;	Ordinal0 [0x004D6FA8+618408]&#10;	Ordinal0 [0x004CAE8F+568975]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004D35C1+603585]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004D1A3C+596540]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004CFB72+588658]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004CED85+585093]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004C6486+550022]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004C9C23+564259]&#10;	Ordinal0 [0x004C9A17+563735]&#10;	Ordinal0 [0x004D7FD0+622544]&#10;	Ordinal0 [0x00476B2D+224045]&#10;	Ordinal0 [0x00475BFC+220156]&#10;	Ordinal0 [0x0047181B+202779]&#10;	Ordinal0 [0x00453D74+81268]&#10;	Ordinal0 [0x00454D6E+85358]&#10;	Ordinal0 [0x00454CF9+85241]&#10;	Ordinal0 [0x00666F2C+2256684]&#10;	GetHandleVerifier [0x008F2FAC+1478332]&#10;	GetHandleVerifier [0x008F2AFD+1477133]&#10;	GetHandleVerifier [0x008FAAD8+1509864]&#10;	GetHandleVerifier [0x008F369E+1480110]&#10;	Ordinal0 [0x0065D6BD+2217661]&#10;	Ordinal0 [0x006689AB+2263467]&#10;	Ordinal0 [0x00668AEF+2263791]&#10;	Ordinal0 [0x0067D363+2347875]&#10;	BaseThreadInitThunk [0x75BE6359+25]&#10;	RtlGetAppContainerNamedObjectPath [0x77888944+228]&#10;	RtlGetAppContainerNamedObjectPath [0x77888914+180]&#10;" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0076ECE3+3337443]
+	Ordinal0 [0x0064F041+2158657]
+	Ordinal0 [0x004D6FA8+618408]
+	Ordinal0 [0x004CAE8F+568975]
+	Ordinal0 [0x004CA131+565553]
+	Ordinal0 [0x004CA525+566565]
+	Ordinal0 [0x004C9E45+564805]
+	Ordinal0 [0x004D35C1+603585]
+	Ordinal0 [0x004C9E01+564737]
+	Ordinal0 [0x004CABB2+568242]
+	Ordinal0 [0x004CA131+565553]
+	Ordinal0 [0x004CA525+566565]
+	Ordinal0 [0x004C9E45+564805]
+	Ordinal0 [0x004D1A3C+596540]
+	Ordinal0 [0x004C9E01+564737]
+	Ordinal0 [0x004CABB2+568242]
+	Ordinal0 [0x004CA131+565553]
+	Ordinal0 [0x004CA525+566565]
+	Ordinal0 [0x004C9E45+564805]
+	Ordinal0 [0x004CFB72+588658]
+	Ordinal0 [0x004C9E01+564737]
+	Ordinal0 [0x004CABB2+568242]
+	Ordinal0 [0x004CA131+565553]
+	Ordinal0 [0x004CA525+566565]
+	Ordinal0 [0x004C9E45+564805]
+	Ordinal0 [0x004CED85+585093]
+	Ordinal0 [0x004C9E01+564737]
+	Ordinal0 [0x004CABB2+568242]
+	Ordinal0 [0x004CA131+565553]
+	Ordinal0 [0x004CA525+566565]
+	Ordinal0 [0x004C9E45+564805]
+	Ordinal0 [0x004C6486+550022]
+	Ordinal0 [0x004C9E01+564737]
+	Ordinal0 [0x004C9C23+564259]
+	Ordinal0 [0x004C9A17+563735]
+	Ordinal0 [0x004D7FD0+622544]
+	Ordinal0 [0x00476B2D+224045]
+	Ordinal0 [0x00475BFC+220156]
+	Ordinal0 [0x0047181B+202779]
+	Ordinal0 [0x00453D74+81268]
+	Ordinal0 [0x00454D6E+85358]
+	Ordinal0 [0x00454CF9+85241]
+	Ordinal0 [0x00666F2C+2256684]
+	GetHandleVerifier [0x008F2FAC+1478332]
+	GetHandleVerifier [0x008F2AFD+1477133]
+	GetHandleVerifier [0x008FAAD8+1509864]
+	GetHandleVerifier [0x008F369E+1480110]
+	Ordinal0 [0x0065D6BD+2217661]
+	Ordinal0 [0x006689AB+2263467]
+	Ordinal0 [0x00668AEF+2263791]
+	Ordinal0 [0x0067D363+2347875]
+	BaseThreadInitThunk [0x75BE6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77888944+228]
+	RtlGetAppContainerNamedObjectPath [0x77888914+180]
+
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 46192
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1611265537.928][SEVERE]: Timed out receiving message from renderer: 600.000
+]]></system-err>
+  </testcase>
+  <testcase name="testContactUs" classname="com.romanceabroad.ui.ContactUsTests" time="0">
+    <skipped message="session not created&#10;from timeout: Timed out receiving message from renderer: 600.000&#10;  (Session info: chrome=87.0.4280.141)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-F0URKIS&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;	Ordinal0 [0x0076ECE3+3337443]&#10;	Ordinal0 [0x0064F041+2158657]&#10;	Ordinal0 [0x004D6FA8+618408]&#10;	Ordinal0 [0x004CAE8F+568975]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004D35C1+603585]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004D1A3C+596540]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004CFB72+588658]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004CED85+585093]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004C6486+550022]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004C9C23+564259]&#10;	Ordinal0 [0x004C9A17+563735]&#10;	Ordinal0 [0x004D7FD0+622544]&#10;	Ordinal0 [0x00476B2D+224045]&#10;	Ordinal0 [0x00475BFC+220156]&#10;	Ordinal0 [0x0047181B+202779]&#10;	Ordinal0 [0x00453D74+81268]&#10;	Ordinal0 [0x00454D6E+85358]&#10;	Ordinal0 [0x00454CF9+85241]&#10;	Ordinal0 [0x00666F2C+2256684]&#10;	GetHandleVerifier [0x008F2FAC+1478332]&#10;	GetHandleVerifier [0x008F2AFD+1477133]&#10;	GetHandleVerifier [0x008FAAD8+1509864]&#10;	GetHandleVerifier [0x008F369E+1480110]&#10;	Ordinal0 [0x0065D6BD+2217661]&#10;	Ordinal0 [0x006689AB+2263467]&#10;	Ordinal0 [0x00668AEF+2263791]&#10;	Ordinal0 [0x0067D363+2347875]&#10;	BaseThreadInitThunk [0x75BE6359+25]&#10;	RtlGetAppContainerNamedObjectPath [0x77888944+228]&#10;	RtlGetAppContainerNamedObjectPath [0x77888914+180]&#10;"/>
+  </testcase>
+  <testcase name="testContactUs" classname="com.romanceabroad.ui.ContactUsTests" time="0">
+    <skipped message="session not created&#10;from timeout: Timed out receiving message from renderer: 600.000&#10;  (Session info: chrome=87.0.4280.141)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-F0URKIS&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;	Ordinal0 [0x0076ECE3+3337443]&#10;	Ordinal0 [0x0064F041+2158657]&#10;	Ordinal0 [0x004D6FA8+618408]&#10;	Ordinal0 [0x004CAE8F+568975]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004D35C1+603585]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004D1A3C+596540]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004CFB72+588658]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004CED85+585093]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004C6486+550022]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004C9C23+564259]&#10;	Ordinal0 [0x004C9A17+563735]&#10;	Ordinal0 [0x004D7FD0+622544]&#10;	Ordinal0 [0x00476B2D+224045]&#10;	Ordinal0 [0x00475BFC+220156]&#10;	Ordinal0 [0x0047181B+202779]&#10;	Ordinal0 [0x00453D74+81268]&#10;	Ordinal0 [0x00454D6E+85358]&#10;	Ordinal0 [0x00454CF9+85241]&#10;	Ordinal0 [0x00666F2C+2256684]&#10;	GetHandleVerifier [0x008F2FAC+1478332]&#10;	GetHandleVerifier [0x008F2AFD+1477133]&#10;	GetHandleVerifier [0x008FAAD8+1509864]&#10;	GetHandleVerifier [0x008F369E+1480110]&#10;	Ordinal0 [0x0065D6BD+2217661]&#10;	Ordinal0 [0x006689AB+2263467]&#10;	Ordinal0 [0x00668AEF+2263791]&#10;	Ordinal0 [0x0067D363+2347875]&#10;	BaseThreadInitThunk [0x75BE6359+25]&#10;	RtlGetAppContainerNamedObjectPath [0x77888944+228]&#10;	RtlGetAppContainerNamedObjectPath [0x77888914+180]&#10;"/>
+    <system-err><![CDATA[Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 40530
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 21, 2021 4:45:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testContactUs" classname="com.romanceabroad.ui.ContactUsTests" time="0">
+    <skipped message="session not created&#10;from timeout: Timed out receiving message from renderer: 600.000&#10;  (Session info: chrome=87.0.4280.141)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-F0URKIS&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;	Ordinal0 [0x0076ECE3+3337443]&#10;	Ordinal0 [0x0064F041+2158657]&#10;	Ordinal0 [0x004D6FA8+618408]&#10;	Ordinal0 [0x004CAE8F+568975]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004D35C1+603585]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004D1A3C+596540]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004CFB72+588658]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004CED85+585093]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004CABB2+568242]&#10;	Ordinal0 [0x004CA131+565553]&#10;	Ordinal0 [0x004CA525+566565]&#10;	Ordinal0 [0x004C9E45+564805]&#10;	Ordinal0 [0x004C6486+550022]&#10;	Ordinal0 [0x004C9E01+564737]&#10;	Ordinal0 [0x004C9C23+564259]&#10;	Ordinal0 [0x004C9A17+563735]&#10;	Ordinal0 [0x004D7FD0+622544]&#10;	Ordinal0 [0x00476B2D+224045]&#10;	Ordinal0 [0x00475BFC+220156]&#10;	Ordinal0 [0x0047181B+202779]&#10;	Ordinal0 [0x00453D74+81268]&#10;	Ordinal0 [0x00454D6E+85358]&#10;	Ordinal0 [0x00454CF9+85241]&#10;	Ordinal0 [0x00666F2C+2256684]&#10;	GetHandleVerifier [0x008F2FAC+1478332]&#10;	GetHandleVerifier [0x008F2AFD+1477133]&#10;	GetHandleVerifier [0x008FAAD8+1509864]&#10;	GetHandleVerifier [0x008F369E+1480110]&#10;	Ordinal0 [0x0065D6BD+2217661]&#10;	Ordinal0 [0x006689AB+2263467]&#10;	Ordinal0 [0x00668AEF+2263791]&#10;	Ordinal0 [0x0067D363+2347875]&#10;	BaseThreadInitThunk [0x75BE6359+25]&#10;	RtlGetAppContainerNamedObjectPath [0x77888944+228]&#10;	RtlGetAppContainerNamedObjectPath [0x77888914+180]&#10;"/>
+    <system-err><![CDATA[Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 39076
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 21, 2021 4:45:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions" classname="com.romanceabroad.ui.ContactUsTests" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterActions" classname="com.romanceabroad.ui.ContactUsTests" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterActions" classname="com.romanceabroad.ui.ContactUsTests" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGiftsIconPageTest1" classname="com.romanceabroad.ui.GiftsTests" time="6.687">
+    <failure message="element not interactable&#10;  (Session info: chrome=87.0.4280.141)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-F0URKIS&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:54562}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: c396385bb651c82432da21fa6c3a3128" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:54562}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c396385bb651c82432da21fa6c3a3128
+	at com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(GiftsTests.java:19)
+</failure>
+    <system-out><![CDATA[Click Photo page
+Click Icon Gifts
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 31661
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 21, 2021 4:46:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testGiftsIconPageTest1" classname="com.romanceabroad.ui.GiftsTests" time="6.956">
+    <failure message="element not interactable&#10;  (Session info: chrome=87.0.4280.141)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-F0URKIS&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:54602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 035a2785c0f7bc2f3d103e7927b74f4f" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:54602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 035a2785c0f7bc2f3d103e7927b74f4f
+	at com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(GiftsTests.java:19)
+</failure>
+    <system-out><![CDATA[Click Photo page
+Click Icon Gifts
+]]></system-out>
+    <system-err><![CDATA[log4j:WARN No appenders could be found for logger (freemarker.cache).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 44003
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 21, 2021 4:46:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testGiftsIconPageTest1" classname="com.romanceabroad.ui.GiftsTests" time="7.44">
+    <failure message="element not interactable&#10;  (Session info: chrome=87.0.4280.141)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-F0URKIS&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir8...}, goog:chromeOptions: {debuggerAddress: localhost:54706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: d089204da376cf9a8d4e8c57c50f804b" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir8...}, goog:chromeOptions: {debuggerAddress: localhost:54706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d089204da376cf9a8d4e8c57c50f804b
+	at com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(GiftsTests.java:19)
+</failure>
+    <system-out><![CDATA[Click Photo page
+Click Icon Gifts
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 31111
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 21, 2021 4:46:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testGiftsIconPageTest1" classname="com.romanceabroad.ui.GiftsTests" time="6.983">
+    <failure message="element not interactable&#10;  (Session info: chrome=87.0.4280.141)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-F0URKIS&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:54883}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 0ce5ef29390fa58920425a58143e8af4" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:54883}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0ce5ef29390fa58920425a58143e8af4
+	at com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(GiftsTests.java:19)
+</failure>
+    <system-out><![CDATA[Click Photo page
+Click Icon Gifts
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 20091
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 21, 2021 4:47:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testGiftsIconPageTest1" classname="com.romanceabroad.ui.GiftsTests" time="7.335">
+    <failure message="element not interactable&#10;  (Session info: chrome=87.0.4280.141)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-F0URKIS&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:55014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 77f5abad5b2bcdae169b703c272b9f9b" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:55014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 77f5abad5b2bcdae169b703c272b9f9b
+	at com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(GiftsTests.java:19)
+</failure>
+    <system-out><![CDATA[Click Photo page
+Click Icon Gifts
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 3456
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 21, 2021 4:47:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testGiftsBasketPageTest2" classname="com.romanceabroad.ui.GiftsTests" time="13.07"/>
+  <testcase name="testWebElementsFooter" classname="com.romanceabroad.ui.FooterTabsTests" time="48.894"/>
+</testsuite>

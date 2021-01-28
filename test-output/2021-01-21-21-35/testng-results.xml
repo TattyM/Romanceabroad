@@ -1,0 +1,1427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="2" failed="5" skipped="3">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-01-21T21:35:33Z" name="TestSuite" finished-at="2021-01-21T21:49:26Z" duration-ms="832403">
+    <groups>
+      <group name="admin">
+        <method signature="ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@fa4c865]" name="testContactUs" class="com.romanceabroad.ui.ContactUsTests"/>
+      </group> <!-- admin -->
+      <group name="ie">
+        <method signature="ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@fa4c865]" name="testContactUs" class="com.romanceabroad.ui.ContactUsTests"/>
+        <method signature="GiftsTests.testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@544fa968]" name="testGiftsIconPageTest1" class="com.romanceabroad.ui.GiftsTests"/>
+      </group> <!-- ie -->
+      <group name="user">
+        <method signature="FooterTabsTests.testWebElementsFooter()[pri:3, instance:com.romanceabroad.ui.FooterTabsTests@3bd82cf5]" name="testWebElementsFooter" class="com.romanceabroad.ui.FooterTabsTests"/>
+        <method signature="GiftsTests.testGiftsBasketPageTest2()[pri:2, instance:com.romanceabroad.ui.GiftsTests@544fa968]" name="testGiftsBasketPageTest2" class="com.romanceabroad.ui.GiftsTests"/>
+      </group> <!-- user -->
+    </groups>
+    <test started-at="2021-01-21T21:35:33Z" name="Chrome Tests Cases" finished-at="2021-01-21T21:49:26Z" duration-ms="832403">
+      <class name="com.romanceabroad.ui.ContactUsTests">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@fa4c865]" started-at="2021-01-21T21:35:33Z" name="setup" finished-at="2021-01-21T21:45:38Z" duration-ms="604341" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x0076ECE3+3337443]
+Ordinal0 [0x0064F041+2158657]
+Ordinal0 [0x004D6FA8+618408]
+Ordinal0 [0x004CAE8F+568975]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D35C1+603585]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D1A3C+596540]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CFB72+588658]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CED85+585093]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004C6486+550022]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004C9C23+564259]
+Ordinal0 [0x004C9A17+563735]
+Ordinal0 [0x004D7FD0+622544]
+Ordinal0 [0x00476B2D+224045]
+Ordinal0 [0x00475BFC+220156]
+Ordinal0 [0x0047181B+202779]
+Ordinal0 [0x00453D74+81268]
+Ordinal0 [0x00454D6E+85358]
+Ordinal0 [0x00454CF9+85241]
+Ordinal0 [0x00666F2C+2256684]
+GetHandleVerifier [0x008F2FAC+1478332]
+GetHandleVerifier [0x008F2AFD+1477133]
+GetHandleVerifier [0x008FAAD8+1509864]
+GetHandleVerifier [0x008F369E+1480110]
+Ordinal0 [0x0065D6BD+2217661]
+Ordinal0 [0x006689AB+2263467]
+Ordinal0 [0x00668AEF+2263791]
+Ordinal0 [0x0067D363+2347875]
+BaseThreadInitThunk [0x75BE6359+25]
+RtlGetAppContainerNamedObjectPath [0x77888944+228]
+RtlGetAppContainerNamedObjectPath [0x77888914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x0076ECE3+3337443]
+Ordinal0 [0x0064F041+2158657]
+Ordinal0 [0x004D6FA8+618408]
+Ordinal0 [0x004CAE8F+568975]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D35C1+603585]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D1A3C+596540]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CFB72+588658]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CED85+585093]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004C6486+550022]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004C9C23+564259]
+Ordinal0 [0x004C9A17+563735]
+Ordinal0 [0x004D7FD0+622544]
+Ordinal0 [0x00476B2D+224045]
+Ordinal0 [0x00475BFC+220156]
+Ordinal0 [0x0047181B+202779]
+Ordinal0 [0x00453D74+81268]
+Ordinal0 [0x00454D6E+85358]
+Ordinal0 [0x00454CF9+85241]
+Ordinal0 [0x00666F2C+2256684]
+GetHandleVerifier [0x008F2FAC+1478332]
+GetHandleVerifier [0x008F2AFD+1477133]
+GetHandleVerifier [0x008FAAD8+1509864]
+GetHandleVerifier [0x008F369E+1480110]
+Ordinal0 [0x0065D6BD+2217661]
+Ordinal0 [0x006689AB+2263467]
+Ordinal0 [0x00668AEF+2263791]
+Ordinal0 [0x0067D363+2347875]
+BaseThreadInitThunk [0x75BE6359+25]
+RtlGetAppContainerNamedObjectPath [0x77888944+228]
+RtlGetAppContainerNamedObjectPath [0x77888914+180]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at com.romanceabroad.ui.BaseUI.setup(BaseUI.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@fa4c865]" started-at="2021-01-21T21:45:38Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-01-21T21:45:38Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x0076ECE3+3337443]
+Ordinal0 [0x0064F041+2158657]
+Ordinal0 [0x004D6FA8+618408]
+Ordinal0 [0x004CAE8F+568975]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D35C1+603585]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D1A3C+596540]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CFB72+588658]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CED85+585093]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004C6486+550022]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004C9C23+564259]
+Ordinal0 [0x004C9A17+563735]
+Ordinal0 [0x004D7FD0+622544]
+Ordinal0 [0x00476B2D+224045]
+Ordinal0 [0x00475BFC+220156]
+Ordinal0 [0x0047181B+202779]
+Ordinal0 [0x00453D74+81268]
+Ordinal0 [0x00454D6E+85358]
+Ordinal0 [0x00454CF9+85241]
+Ordinal0 [0x00666F2C+2256684]
+GetHandleVerifier [0x008F2FAC+1478332]
+GetHandleVerifier [0x008F2AFD+1477133]
+GetHandleVerifier [0x008FAAD8+1509864]
+GetHandleVerifier [0x008F369E+1480110]
+Ordinal0 [0x0065D6BD+2217661]
+Ordinal0 [0x006689AB+2263467]
+Ordinal0 [0x00668AEF+2263791]
+Ordinal0 [0x0067D363+2347875]
+BaseThreadInitThunk [0x75BE6359+25]
+RtlGetAppContainerNamedObjectPath [0x77888944+228]
+RtlGetAppContainerNamedObjectPath [0x77888914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x0076ECE3+3337443]
+Ordinal0 [0x0064F041+2158657]
+Ordinal0 [0x004D6FA8+618408]
+Ordinal0 [0x004CAE8F+568975]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D35C1+603585]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D1A3C+596540]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CFB72+588658]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CED85+585093]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004C6486+550022]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004C9C23+564259]
+Ordinal0 [0x004C9A17+563735]
+Ordinal0 [0x004D7FD0+622544]
+Ordinal0 [0x00476B2D+224045]
+Ordinal0 [0x00475BFC+220156]
+Ordinal0 [0x0047181B+202779]
+Ordinal0 [0x00453D74+81268]
+Ordinal0 [0x00454D6E+85358]
+Ordinal0 [0x00454CF9+85241]
+Ordinal0 [0x00666F2C+2256684]
+GetHandleVerifier [0x008F2FAC+1478332]
+GetHandleVerifier [0x008F2AFD+1477133]
+GetHandleVerifier [0x008FAAD8+1509864]
+GetHandleVerifier [0x008F369E+1480110]
+Ordinal0 [0x0065D6BD+2217661]
+Ordinal0 [0x006689AB+2263467]
+Ordinal0 [0x00668AEF+2263791]
+Ordinal0 [0x0067D363+2347875]
+BaseThreadInitThunk [0x75BE6359+25]
+RtlGetAppContainerNamedObjectPath [0x77888944+228]
+RtlGetAppContainerNamedObjectPath [0x77888914+180]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at com.romanceabroad.ui.BaseUI.setup(BaseUI.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@fa4c865]" started-at="2021-01-21T21:45:38Z" name="afterActions" finished-at="2021-01-21T21:45:38Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@fa4c865]" started-at="2021-01-21T21:45:38Z" name="setup" finished-at="2021-01-21T21:45:52Z" duration-ms="14538" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@fa4c865]" started-at="2021-01-21T21:45:52Z" name="afterActions" finished-at="2021-01-21T21:45:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@fa4c865]" started-at="2021-01-21T21:45:52Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-01-21T21:45:52Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x0076ECE3+3337443]
+Ordinal0 [0x0064F041+2158657]
+Ordinal0 [0x004D6FA8+618408]
+Ordinal0 [0x004CAE8F+568975]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D35C1+603585]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D1A3C+596540]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CFB72+588658]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CED85+585093]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004C6486+550022]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004C9C23+564259]
+Ordinal0 [0x004C9A17+563735]
+Ordinal0 [0x004D7FD0+622544]
+Ordinal0 [0x00476B2D+224045]
+Ordinal0 [0x00475BFC+220156]
+Ordinal0 [0x0047181B+202779]
+Ordinal0 [0x00453D74+81268]
+Ordinal0 [0x00454D6E+85358]
+Ordinal0 [0x00454CF9+85241]
+Ordinal0 [0x00666F2C+2256684]
+GetHandleVerifier [0x008F2FAC+1478332]
+GetHandleVerifier [0x008F2AFD+1477133]
+GetHandleVerifier [0x008FAAD8+1509864]
+GetHandleVerifier [0x008F369E+1480110]
+Ordinal0 [0x0065D6BD+2217661]
+Ordinal0 [0x006689AB+2263467]
+Ordinal0 [0x00668AEF+2263791]
+Ordinal0 [0x0067D363+2347875]
+BaseThreadInitThunk [0x75BE6359+25]
+RtlGetAppContainerNamedObjectPath [0x77888944+228]
+RtlGetAppContainerNamedObjectPath [0x77888914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x0076ECE3+3337443]
+Ordinal0 [0x0064F041+2158657]
+Ordinal0 [0x004D6FA8+618408]
+Ordinal0 [0x004CAE8F+568975]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D35C1+603585]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D1A3C+596540]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CFB72+588658]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CED85+585093]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004C6486+550022]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004C9C23+564259]
+Ordinal0 [0x004C9A17+563735]
+Ordinal0 [0x004D7FD0+622544]
+Ordinal0 [0x00476B2D+224045]
+Ordinal0 [0x00475BFC+220156]
+Ordinal0 [0x0047181B+202779]
+Ordinal0 [0x00453D74+81268]
+Ordinal0 [0x00454D6E+85358]
+Ordinal0 [0x00454CF9+85241]
+Ordinal0 [0x00666F2C+2256684]
+GetHandleVerifier [0x008F2FAC+1478332]
+GetHandleVerifier [0x008F2AFD+1477133]
+GetHandleVerifier [0x008FAAD8+1509864]
+GetHandleVerifier [0x008F369E+1480110]
+Ordinal0 [0x0065D6BD+2217661]
+Ordinal0 [0x006689AB+2263467]
+Ordinal0 [0x00668AEF+2263791]
+Ordinal0 [0x0067D363+2347875]
+BaseThreadInitThunk [0x75BE6359+25]
+RtlGetAppContainerNamedObjectPath [0x77888944+228]
+RtlGetAppContainerNamedObjectPath [0x77888914+180]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at com.romanceabroad.ui.BaseUI.setup(BaseUI.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@fa4c865]" started-at="2021-01-21T21:45:52Z" name="setup" finished-at="2021-01-21T21:46:06Z" duration-ms="13841" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@fa4c865]" started-at="2021-01-21T21:46:06Z" name="afterActions" finished-at="2021-01-21T21:46:06Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@fa4c865]" started-at="2021-01-21T21:46:06Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-01-21T21:46:06Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x0076ECE3+3337443]
+Ordinal0 [0x0064F041+2158657]
+Ordinal0 [0x004D6FA8+618408]
+Ordinal0 [0x004CAE8F+568975]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D35C1+603585]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D1A3C+596540]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CFB72+588658]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CED85+585093]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004C6486+550022]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004C9C23+564259]
+Ordinal0 [0x004C9A17+563735]
+Ordinal0 [0x004D7FD0+622544]
+Ordinal0 [0x00476B2D+224045]
+Ordinal0 [0x00475BFC+220156]
+Ordinal0 [0x0047181B+202779]
+Ordinal0 [0x00453D74+81268]
+Ordinal0 [0x00454D6E+85358]
+Ordinal0 [0x00454CF9+85241]
+Ordinal0 [0x00666F2C+2256684]
+GetHandleVerifier [0x008F2FAC+1478332]
+GetHandleVerifier [0x008F2AFD+1477133]
+GetHandleVerifier [0x008FAAD8+1509864]
+GetHandleVerifier [0x008F369E+1480110]
+Ordinal0 [0x0065D6BD+2217661]
+Ordinal0 [0x006689AB+2263467]
+Ordinal0 [0x00668AEF+2263791]
+Ordinal0 [0x0067D363+2347875]
+BaseThreadInitThunk [0x75BE6359+25]
+RtlGetAppContainerNamedObjectPath [0x77888944+228]
+RtlGetAppContainerNamedObjectPath [0x77888914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x0076ECE3+3337443]
+Ordinal0 [0x0064F041+2158657]
+Ordinal0 [0x004D6FA8+618408]
+Ordinal0 [0x004CAE8F+568975]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D35C1+603585]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004D1A3C+596540]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CFB72+588658]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004CED85+585093]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004CABB2+568242]
+Ordinal0 [0x004CA131+565553]
+Ordinal0 [0x004CA525+566565]
+Ordinal0 [0x004C9E45+564805]
+Ordinal0 [0x004C6486+550022]
+Ordinal0 [0x004C9E01+564737]
+Ordinal0 [0x004C9C23+564259]
+Ordinal0 [0x004C9A17+563735]
+Ordinal0 [0x004D7FD0+622544]
+Ordinal0 [0x00476B2D+224045]
+Ordinal0 [0x00475BFC+220156]
+Ordinal0 [0x0047181B+202779]
+Ordinal0 [0x00453D74+81268]
+Ordinal0 [0x00454D6E+85358]
+Ordinal0 [0x00454CF9+85241]
+Ordinal0 [0x00666F2C+2256684]
+GetHandleVerifier [0x008F2FAC+1478332]
+GetHandleVerifier [0x008F2AFD+1477133]
+GetHandleVerifier [0x008FAAD8+1509864]
+GetHandleVerifier [0x008F369E+1480110]
+Ordinal0 [0x0065D6BD+2217661]
+Ordinal0 [0x006689AB+2263467]
+Ordinal0 [0x00668AEF+2263791]
+Ordinal0 [0x0067D363+2347875]
+BaseThreadInitThunk [0x75BE6359+25]
+RtlGetAppContainerNamedObjectPath [0x77888944+228]
+RtlGetAppContainerNamedObjectPath [0x77888914+180]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at com.romanceabroad.ui.BaseUI.setup(BaseUI.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+      </class> <!-- com.romanceabroad.ui.ContactUsTests -->
+      <class name="com.romanceabroad.ui.GiftsTests">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:46:06Z" name="setup" finished-at="2021-01-21T21:46:19Z" duration-ms="13123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:46:19Z" name="testGiftsIconPageTest1" data-provider="InputsSearch" finished-at="2021-01-21T21:46:26Z" duration-ms="6687" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[spa]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:54562}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c396385bb651c82432da21fa6c3a3128]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:54562}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c396385bb651c82432da21fa6c3a3128
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(GiftsTests.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGiftsIconPageTest1 -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:46:26Z" name="afterActions" finished-at="2021-01-21T21:46:28Z" duration-ms="1835" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGiftsIconPageTest1 status=FAILURE method=GiftsTests.testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@544fa968] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:46:28Z" name="setup" finished-at="2021-01-21T21:46:41Z" duration-ms="13154" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:46:41Z" name="testGiftsIconPageTest1" data-provider="InputsSearch" finished-at="2021-01-21T21:46:48Z" duration-ms="6955" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Flowers]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:54602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 035a2785c0f7bc2f3d103e7927b74f4f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:54602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 035a2785c0f7bc2f3d103e7927b74f4f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(GiftsTests.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGiftsIconPageTest1 -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:46:48Z" name="afterActions" finished-at="2021-01-21T21:46:49Z" duration-ms="1389" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGiftsIconPageTest1 status=FAILURE method=GiftsTests.testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@544fa968] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:46:49Z" name="setup" finished-at="2021-01-21T21:47:03Z" duration-ms="13707" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:47:03Z" name="testGiftsIconPageTest1" data-provider="InputsSearch" finished-at="2021-01-21T21:47:10Z" duration-ms="7439" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[teddy]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir8...}, goog:chromeOptions: {debuggerAddress: localhost:54706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d089204da376cf9a8d4e8c57c50f804b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir8...}, goog:chromeOptions: {debuggerAddress: localhost:54706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d089204da376cf9a8d4e8c57c50f804b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(GiftsTests.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGiftsIconPageTest1 -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:47:10Z" name="afterActions" finished-at="2021-01-21T21:47:11Z" duration-ms="1242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGiftsIconPageTest1 status=FAILURE method=GiftsTests.testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@544fa968] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:47:11Z" name="setup" finished-at="2021-01-21T21:47:25Z" duration-ms="13541" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:47:25Z" name="testGiftsIconPageTest1" data-provider="InputsSearch" finished-at="2021-01-21T21:47:32Z" duration-ms="6983" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bear]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:54883}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0ce5ef29390fa58920425a58143e8af4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:54883}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0ce5ef29390fa58920425a58143e8af4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(GiftsTests.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGiftsIconPageTest1 -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:47:32Z" name="afterActions" finished-at="2021-01-21T21:47:33Z" duration-ms="1254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGiftsIconPageTest1 status=FAILURE method=GiftsTests.testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@544fa968] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:47:33Z" name="setup" finished-at="2021-01-21T21:47:47Z" duration-ms="13830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:47:47Z" name="testGiftsIconPageTest1" data-provider="InputsSearch" finished-at="2021-01-21T21:47:54Z" duration-ms="7333" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rose]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:55014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 77f5abad5b2bcdae169b703c272b9f9b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0URKIS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:55014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 77f5abad5b2bcdae169b703c272b9f9b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.romanceabroad.ui.GiftsTests.testGiftsIconPageTest1(GiftsTests.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGiftsIconPageTest1 -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:47:54Z" name="afterActions" finished-at="2021-01-21T21:47:56Z" duration-ms="1149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGiftsIconPageTest1 status=FAILURE method=GiftsTests.testGiftsIconPageTest1(java.lang.String)[pri:1, instance:com.romanceabroad.ui.GiftsTests@544fa968] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:47:56Z" name="setup" finished-at="2021-01-21T21:48:09Z" duration-ms="13359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.GiftsTests.testGiftsBasketPageTest2()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGiftsBasketPageTest2()[pri:2, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:48:09Z" name="testGiftsBasketPageTest2" finished-at="2021-01-21T21:48:22Z" duration-ms="13070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGiftsBasketPageTest2 -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.GiftsTests@544fa968]" started-at="2021-01-21T21:48:22Z" name="afterActions" finished-at="2021-01-21T21:48:23Z" duration-ms="663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGiftsBasketPageTest2 status=SUCCESS method=GiftsTests.testGiftsBasketPageTest2()[pri:2, instance:com.romanceabroad.ui.GiftsTests@544fa968] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+      </class> <!-- com.romanceabroad.ui.GiftsTests -->
+      <class name="com.romanceabroad.ui.FooterTabsTests">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.FooterTabsTests@3bd82cf5]" started-at="2021-01-21T21:48:23Z" name="setup" finished-at="2021-01-21T21:48:36Z" duration-ms="13305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.FooterTabsTests.testWebElementsFooter()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testWebElementsFooter()[pri:3, instance:com.romanceabroad.ui.FooterTabsTests@3bd82cf5]" started-at="2021-01-21T21:48:36Z" name="testWebElementsFooter" finished-at="2021-01-21T21:49:25Z" duration-ms="48894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWebElementsFooter -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.FooterTabsTests@3bd82cf5]" started-at="2021-01-21T21:49:25Z" name="afterActions" finished-at="2021-01-21T21:49:26Z" duration-ms="692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testWebElementsFooter status=SUCCESS method=FooterTabsTests.testWebElementsFooter()[pri:3, instance:com.romanceabroad.ui.FooterTabsTests@3bd82cf5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+      </class> <!-- com.romanceabroad.ui.FooterTabsTests -->
+    </test> <!-- Chrome Tests Cases -->
+  </suite> <!-- TestSuite -->
+</testng-results>

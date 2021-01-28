@@ -1,0 +1,48 @@
+# Created at 2021-01-20T12:42:35.244
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:390)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2021-01-20T12:42:38.578
+Unexpected IOException: 5,1,com.romanceabroad.ui.UserProfileTests,testUserProfile(com.romanceabroad.ui.UserProfileTests),admin,null,null
+
+
+# Created at 2021-01-20T12:42:44.012
+Unexpected IOException with stream: Tafita
+
+
+# Created at 2021-01-20T12:42:47.561
+Unexpected IOException with stream: Single Ukrainian women online
+
+
+# Created at 2021-01-20T12:43:01.229
+Unexpected IOException with stream: Log in form is displayed!
+
+
+# Created at 2021-01-20T12:43:01.230
+Unexpected IOException with stream: It is a good Url!
+
+
+# Created at 2021-01-20T12:43:01.251
+Unexpected IOException with stream: 3
+
+# Created at 2021-01-20T12:43:01.252
+Unexpected IOException with stream: 
+
+
+# Created at 2021-01-20T12:43:01.274
+Unexpected IOException with stream: Wall
+
+
+# Created at 2021-01-20T12:43:17.845
+Unexpected IOException with stream: Profile
+
+
+# Created at 2021-01-20T12:43:25.760
+Unexpected IOException with stream: Gallery
+
+

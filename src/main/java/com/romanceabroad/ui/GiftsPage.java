@@ -13,7 +13,9 @@ public class GiftsPage extends BaseActions {
 
 
     public void clickButtonSearch() {
+        Reports.log("Wait for button Search");
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.BUTTON_SEARCH_GIFT)));
+        Reports.log("Click button Search Gift");
         WebElement buttonSearch = driver.findElement(Locators.BUTTON_SEARCH_GIFT);
         buttonSearch.click();
     }
