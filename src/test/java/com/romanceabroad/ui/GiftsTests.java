@@ -1,11 +1,13 @@
 package com.romanceabroad.ui;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
 
 public class GiftsTests extends BaseUI {
-    public static final boolean isTest2 = true;
+    public static final boolean isTest2 = false;
     public static final boolean isTest3 = true;
 
 
@@ -25,8 +27,10 @@ public class GiftsTests extends BaseUI {
         System.out.println(inputsearch);
     }
 
-    @Test(priority = 2, enabled = isTest3, groups = {"user"})
+    @Test(priority = 2, enabled = isTest3, groups = {"user"})   //Mobile Test
     public void testGiftsBasketPageTest2() {
+        mainPage.clickMobileMenu3();
+        mainPage.javaWaitSec(3);
         mainPage.clickGiftsPageLink();
         String currentUrlGifts = driver.getCurrentUrl();
         System.out.println(currentUrlGifts);

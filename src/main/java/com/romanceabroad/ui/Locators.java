@@ -66,6 +66,7 @@ public class Locators {
     public static final By TEXT_INFO_USER = By.xpath("//div[@class='text-overflow']");
 
     //PhotosPage
+    public static final By MOBILE_MENU = By.xpath("//span[@class='navbar-toggler-icon']");
     public static final By LINK_PHOTOS = By.xpath("//a[@href='https://romanceabroad.com/media/index']");
     public static final By BUTTON_ALBUMS = By.xpath("//a[@href='https://romanceabroad.com/media/albums']");
     public static final By BUTTON_РУССКИЙ = By.xpath("//a[contains(text(),'Русский')]");
@@ -80,7 +81,7 @@ public class Locators {
     public static final By LINK_OF_ARTICLES = By.xpath("//ul[@class='nav nav-pills nav-stacked content-pages-tree']//li");
 
     //Gifts Page
-    public static final By LINK_GIFTS = By.xpath("//a[text()='GIFTS']");
+    public static final By LINK_GIFTS = By.xpath("//a[@href='https://romanceabroad.com/store/category-sweets']");
     public static final By LINK_ICON_GIFTS = By.xpath("//a[contains(text(),'Gifts')]");
     public static final By LINK_TEXT_FIELD = By.cssSelector("input#search_product");
     public static final By BUTTON_SEARCH_GIFT = By.cssSelector("#search_friend");

@@ -1,0 +1,1407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-02T01:39:24Z" name="Chrome Tests Cases" finished-at="2021-02-02T01:42:48Z" duration-ms="204252">
+    <groups>
+      <group name="admin">
+        <method signature="ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@58a9760d]" name="testContactUs" class="com.romanceabroad.ui.ContactUsTests"/>
+        <method signature="ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@75db5df9]" name="testContactUs" class="com.romanceabroad.ui.ContactUsTests"/>
+        <method signature="ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@291caca8]" name="testContactUs" class="com.romanceabroad.ui.ContactUsTests"/>
+      </group> <!-- admin -->
+      <group name="ie">
+        <method signature="ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@58a9760d]" name="testContactUs" class="com.romanceabroad.ui.ContactUsTests"/>
+        <method signature="ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@75db5df9]" name="testContactUs" class="com.romanceabroad.ui.ContactUsTests"/>
+        <method signature="ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@291caca8]" name="testContactUs" class="com.romanceabroad.ui.ContactUsTests"/>
+      </group> <!-- ie -->
+    </groups>
+    <test started-at="2021-02-02T01:39:24Z" name="Moto G4 test cases" finished-at="2021-02-02T01:40:29Z" duration-ms="65138">
+      <class name="com.romanceabroad.ui.ContactUsTests">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@58a9760d]" started-at="2021-02-02T01:39:24Z" name="setup" finished-at="2021-02-02T01:39:35Z" duration-ms="11709" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Moto G4]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@58a9760d]" started-at="2021-02-02T01:39:35Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:39:44Z" duration-ms="9021" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pre-Sales Questions]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Carlos1111]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lmao@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Send flowers]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[I want to send flowers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@58a9760d]" started-at="2021-02-02T01:39:44Z" name="afterActions" finished-at="2021-02-02T01:39:45Z" duration-ms="704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@58a9760d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@58a9760d]" started-at="2021-02-02T01:39:45Z" name="setup" finished-at="2021-02-02T01:40:00Z" duration-ms="15035" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Moto G4]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@58a9760d]" started-at="2021-02-02T01:40:00Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:40:08Z" duration-ms="8187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Technical support]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Robert]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0000000@yahoo.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[I lost my girlfriend]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[HELP!!!!!!!!!!!!!!!!!!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@58a9760d]" started-at="2021-02-02T01:40:08Z" name="afterActions" finished-at="2021-02-02T01:40:09Z" duration-ms="704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@58a9760d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@58a9760d]" started-at="2021-02-02T01:40:09Z" name="setup" finished-at="2021-02-02T01:40:20Z" duration-ms="11232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Moto G4]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@58a9760d]" started-at="2021-02-02T01:40:20Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:40:28Z" duration-ms="7887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Other]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Albert]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[albert567484@htmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password reset]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[I forgot my password need help]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@58a9760d]" started-at="2021-02-02T01:40:28Z" name="afterActions" finished-at="2021-02-02T01:40:29Z" duration-ms="658" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@58a9760d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+      </class> <!-- com.romanceabroad.ui.ContactUsTests -->
+    </test> <!-- Moto G4 test cases -->
+    <test started-at="2021-02-02T01:40:29Z" name="iPhone X test cases" finished-at="2021-02-02T01:41:36Z" duration-ms="67290">
+      <class name="com.romanceabroad.ui.ContactUsTests">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@75db5df9]" started-at="2021-02-02T01:40:29Z" name="setup" finished-at="2021-02-02T01:40:43Z" duration-ms="14363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[iPhone X]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@75db5df9]" started-at="2021-02-02T01:40:43Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:40:55Z" duration-ms="11426" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pre-Sales Questions]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Carlos1111]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lmao@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Send flowers]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[I want to send flowers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@75db5df9]" started-at="2021-02-02T01:40:55Z" name="afterActions" finished-at="2021-02-02T01:40:55Z" duration-ms="691" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@75db5df9]" started-at="2021-02-02T01:40:55Z" name="setup" finished-at="2021-02-02T01:41:07Z" duration-ms="11415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[iPhone X]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@75db5df9]" started-at="2021-02-02T01:41:07Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:41:16Z" duration-ms="8988" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Technical support]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Robert]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0000000@yahoo.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[I lost my girlfriend]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[HELP!!!!!!!!!!!!!!!!!!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@75db5df9]" started-at="2021-02-02T01:41:16Z" name="afterActions" finished-at="2021-02-02T01:41:16Z" duration-ms="660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@75db5df9]" started-at="2021-02-02T01:41:16Z" name="setup" finished-at="2021-02-02T01:41:28Z" duration-ms="11612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[iPhone X]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@75db5df9]" started-at="2021-02-02T01:41:28Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:41:35Z" duration-ms="7476" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Other]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Albert]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[albert567484@htmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password reset]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[I forgot my password need help]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@75db5df9]" started-at="2021-02-02T01:41:35Z" name="afterActions" finished-at="2021-02-02T01:41:36Z" duration-ms="657" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+      </class> <!-- com.romanceabroad.ui.ContactUsTests -->
+    </test> <!-- iPhone X test cases -->
+    <test started-at="2021-02-02T01:41:36Z" name="Galaxy S5 test cases" finished-at="2021-02-02T01:42:48Z" duration-ms="71809">
+      <class name="com.romanceabroad.ui.ContactUsTests">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@291caca8]" started-at="2021-02-02T01:41:36Z" name="setup" finished-at="2021-02-02T01:41:47Z" duration-ms="11136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Galaxy S5]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@291caca8]" started-at="2021-02-02T01:41:47Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:42:03Z" duration-ms="15477" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pre-Sales Questions]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Carlos1111]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lmao@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Send flowers]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[I want to send flowers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@291caca8]" started-at="2021-02-02T01:42:03Z" name="afterActions" finished-at="2021-02-02T01:42:03Z" duration-ms="685" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@291caca8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@291caca8]" started-at="2021-02-02T01:42:03Z" name="setup" finished-at="2021-02-02T01:42:16Z" duration-ms="12210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Galaxy S5]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@291caca8]" started-at="2021-02-02T01:42:16Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:42:26Z" duration-ms="10102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Technical support]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Robert]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0000000@yahoo.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[I lost my girlfriend]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[HELP!!!!!!!!!!!!!!!!!!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@291caca8]" started-at="2021-02-02T01:42:26Z" name="afterActions" finished-at="2021-02-02T01:42:26Z" duration-ms="682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@291caca8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@291caca8]" started-at="2021-02-02T01:42:26Z" name="setup" finished-at="2021-02-02T01:42:39Z" duration-ms="12436" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Galaxy S5]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@291caca8]" started-at="2021-02-02T01:42:39Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:42:47Z" duration-ms="8423" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Other]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Albert]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[albert567484@htmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password reset]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[I forgot my password need help]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@291caca8]" started-at="2021-02-02T01:42:47Z" name="afterActions" finished-at="2021-02-02T01:42:48Z" duration-ms="654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@291caca8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+      </class> <!-- com.romanceabroad.ui.ContactUsTests -->
+    </test> <!-- Galaxy S5 test cases -->
+  </suite> <!-- Chrome Tests Cases -->
+  <suite started-at="2021-02-02T01:35:47Z" name="TestSuite" finished-at="2021-02-02T01:39:24Z" duration-ms="216604">
+    <groups>
+      <group name="admin">
+        <method signature="ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@8297b3a]" name="testContactUs" class="com.romanceabroad.ui.ContactUsTests"/>
+        <method signature="ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@bccb269]" name="testContactUs" class="com.romanceabroad.ui.ContactUsTests"/>
+        <method signature="ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@3c3d9b6b]" name="testContactUs" class="com.romanceabroad.ui.ContactUsTests"/>
+      </group> <!-- admin -->
+      <group name="ie">
+        <method signature="ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@8297b3a]" name="testContactUs" class="com.romanceabroad.ui.ContactUsTests"/>
+        <method signature="ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@bccb269]" name="testContactUs" class="com.romanceabroad.ui.ContactUsTests"/>
+        <method signature="ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@3c3d9b6b]" name="testContactUs" class="com.romanceabroad.ui.ContactUsTests"/>
+      </group> <!-- ie -->
+    </groups>
+    <test started-at="2021-02-02T01:35:47Z" name="Chrome Tests Cases" finished-at="2021-02-02T01:37:08Z" duration-ms="80894">
+      <class name="com.romanceabroad.ui.ContactUsTests">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@8297b3a]" started-at="2021-02-02T01:35:47Z" name="setup" finished-at="2021-02-02T01:36:01Z" duration-ms="13926" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[87.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@8297b3a]" started-at="2021-02-02T01:36:01Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:36:14Z" duration-ms="13098" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pre-Sales Questions]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Carlos1111]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lmao@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Send flowers]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[I want to send flowers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@8297b3a]" started-at="2021-02-02T01:36:14Z" name="afterActions" finished-at="2021-02-02T01:36:15Z" duration-ms="1217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@8297b3a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@8297b3a]" started-at="2021-02-02T01:36:15Z" name="setup" finished-at="2021-02-02T01:36:29Z" duration-ms="13216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[87.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@8297b3a]" started-at="2021-02-02T01:36:29Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:36:41Z" duration-ms="12710" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Technical support]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Robert]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0000000@yahoo.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[I lost my girlfriend]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[HELP!!!!!!!!!!!!!!!!!!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@8297b3a]" started-at="2021-02-02T01:36:41Z" name="afterActions" finished-at="2021-02-02T01:36:42Z" duration-ms="705" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@8297b3a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@8297b3a]" started-at="2021-02-02T01:36:42Z" name="setup" finished-at="2021-02-02T01:36:55Z" duration-ms="13374" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[87.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@8297b3a]" started-at="2021-02-02T01:36:55Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:37:07Z" duration-ms="11875" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Other]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Albert]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[albert567484@htmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password reset]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[I forgot my password need help]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@8297b3a]" started-at="2021-02-02T01:37:07Z" name="afterActions" finished-at="2021-02-02T01:37:08Z" duration-ms="739" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@8297b3a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+      </class> <!-- com.romanceabroad.ui.ContactUsTests -->
+    </test> <!-- Chrome Tests Cases -->
+    <test started-at="2021-02-02T01:37:08Z" name="Firefox Tests Cases" finished-at="2021-02-02T01:38:14Z" duration-ms="66289">
+      <class name="com.romanceabroad.ui.ContactUsTests">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@bccb269]" started-at="2021-02-02T01:37:08Z" name="setup" finished-at="2021-02-02T01:37:19Z" duration-ms="11252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS 10.15]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[64.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@bccb269]" started-at="2021-02-02T01:37:19Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:37:30Z" duration-ms="10606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pre-Sales Questions]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Carlos1111]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lmao@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Send flowers]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[I want to send flowers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@bccb269]" started-at="2021-02-02T01:37:30Z" name="afterActions" finished-at="2021-02-02T01:37:31Z" duration-ms="1086" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@bccb269] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@bccb269]" started-at="2021-02-02T01:37:31Z" name="setup" finished-at="2021-02-02T01:37:42Z" duration-ms="10920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS 10.15]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[64.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@bccb269]" started-at="2021-02-02T01:37:42Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:37:51Z" duration-ms="9398" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Technical support]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Robert]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0000000@yahoo.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[I lost my girlfriend]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[HELP!!!!!!!!!!!!!!!!!!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@bccb269]" started-at="2021-02-02T01:37:51Z" name="afterActions" finished-at="2021-02-02T01:37:52Z" duration-ms="1149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@bccb269] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@bccb269]" started-at="2021-02-02T01:37:52Z" name="setup" finished-at="2021-02-02T01:38:02Z" duration-ms="9966" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS 10.15]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[64.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@bccb269]" started-at="2021-02-02T01:38:02Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:38:13Z" duration-ms="10663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Other]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Albert]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[albert567484@htmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password reset]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[I forgot my password need help]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@bccb269]" started-at="2021-02-02T01:38:13Z" name="afterActions" finished-at="2021-02-02T01:38:14Z" duration-ms="1246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@bccb269] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+      </class> <!-- com.romanceabroad.ui.ContactUsTests -->
+    </test> <!-- Firefox Tests Cases -->
+    <test started-at="2021-02-02T01:38:14Z" name="IE Tests Cases" finished-at="2021-02-02T01:39:24Z" duration-ms="69374">
+      <class name="com.romanceabroad.ui.ContactUsTests">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@3c3d9b6b]" started-at="2021-02-02T01:38:14Z" name="setup" finished-at="2021-02-02T01:38:27Z" duration-ms="12355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 8.1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@3c3d9b6b]" started-at="2021-02-02T01:38:27Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:38:40Z" duration-ms="13658" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pre-Sales Questions]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Carlos1111]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lmao@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Send flowers]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[I want to send flowers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@3c3d9b6b]" started-at="2021-02-02T01:38:40Z" name="afterActions" finished-at="2021-02-02T01:38:41Z" duration-ms="680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@3c3d9b6b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@3c3d9b6b]" started-at="2021-02-02T01:38:41Z" name="setup" finished-at="2021-02-02T01:38:50Z" duration-ms="8816" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 8.1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@3c3d9b6b]" started-at="2021-02-02T01:38:50Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:39:03Z" duration-ms="12703" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Technical support]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Robert]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0000000@yahoo.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[I lost my girlfriend]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[HELP!!!!!!!!!!!!!!!!!!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@3c3d9b6b]" started-at="2021-02-02T01:39:03Z" name="afterActions" finished-at="2021-02-02T01:39:03Z" duration-ms="675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@3c3d9b6b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@3c3d9b6b]" started-at="2021-02-02T01:39:03Z" name="setup" finished-at="2021-02-02T01:39:11Z" duration-ms="7848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 8.1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.ContactUsTests.testContactUs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@3c3d9b6b]" started-at="2021-02-02T01:39:11Z" name="testContactUs" data-provider="QuestionForm" finished-at="2021-02-02T01:39:23Z" duration-ms="11965" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Other]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Albert]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[albert567484@htmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password reset]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[I forgot my password need help]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.ContactUsTests@3c3d9b6b]" started-at="2021-02-02T01:39:23Z" name="afterActions" finished-at="2021-02-02T01:39:24Z" duration-ms="670" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=ContactUsTests.testContactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.romanceabroad.ui.ContactUsTests@3c3d9b6b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+      </class> <!-- com.romanceabroad.ui.ContactUsTests -->
+    </test> <!-- IE Tests Cases -->
+  </suite> <!-- TestSuite -->
+</testng-results>

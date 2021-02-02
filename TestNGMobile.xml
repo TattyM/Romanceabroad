@@ -2,20 +2,22 @@
 
 <suite name="Chrome Tests Cases" parallel="none">
 
-    <test name="Moto G4 test cases">
-        <parameter name="testBox" value="mobile"/>
-        <parameter name="browser" value="chrome"/>
-        <parameter name="deviceName" value="Moto G4"/>
-
-
-        <classes>
-            <class name="com.romanceabroad.ui.ContactUsTests"/>
-        </classes>
-    </test>
     <test name="iPhone X test cases">
+
+        <parameter name="testEnv" value="qa"/>
         <parameter name="testBox" value="mobile"/>
         <parameter name="browser" value="chrome"/>
         <parameter name="deviceName" value="iPhone X"/>
+
+
+        <classes>
+            <class name="com.romanceabroad.ui.GiftsTests"/>
+        </classes>
+    </test>
+    <!--<test name="Moto G4 test cases">
+        <parameter name="testBox" value="mobile"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="deviceName" value="Moto G4"/>
 
 
         <classes>
@@ -31,7 +33,7 @@
         <classes>
             <class name="com.romanceabroad.ui.ContactUsTests"/>
         </classes>
-    </test>
+    </test>-->
 
 </suite>
 
