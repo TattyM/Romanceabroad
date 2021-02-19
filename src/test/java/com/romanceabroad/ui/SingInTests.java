@@ -11,7 +11,7 @@ public class SingInTests extends BaseUI {
     public static final boolean isTest22 = true;
     String currentUrl;
 
-   // @Video(name = "SingIn")
+    // @Video(name = "SingIn")
     @Test(dataProvider = "SingIn", dataProviderClass = DataProviders.class, priority = 1, enabled = isTest22, groups = {"ie"})
     public void negativeTestsSingIn(String email, String password) {
         Reports.log("Test Sing In Form");
@@ -23,3 +23,10 @@ public class SingInTests extends BaseUI {
         Assert.assertEquals(currentUrl, Data.expectedUrlSingIn);
     }
 }
+
+
+
+
+
+
+

@@ -2,13 +2,37 @@ package com.romanceabroad.ui;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
 
 public class MainPage extends BaseActions {
+    @FindBy(xpath = "//a[(text()='JOIN TODAY!')]")
+    WebElement buttonJoinToday;
+    @FindBy(xpath = "//input[@id='email']")
+    WebElement fieldEmail;
+    @FindBy(xpath = "//input[@id='password']")
+    WebElement fieldPassword;
+    @FindBy(xpath = "//button[@type='button'][normalize-space()='Next']")
+    WebElement buttonNext;
+    @FindBy(xpath = "//input[@id='nickname']")
+    WebElement fieldNickname;
+    @FindBy(xpath = "//div[@id='daySelect']//a[@class='btn btn-default dropdown-toggle btn-lg btn-block']")
+    WebElement fieldDay;
+    @FindBy(xpath = "//div[@id='monthSelect']//a[@class='btn btn-default dropdown-toggle btn-lg btn-block']")
+    WebElement fieldMonth;
+    @FindBy(xpath = "//div[@id='yearSelect']//a[@class='btn btn-default dropdown-toggle btn-lg btn-block']")
+    WebElement fieldYear;
+    @FindBy(xpath = "//input[@type='text'][@name='data[phone]']")
+    WebElement fieldPhone;
+    @FindBy(xpath = "//input[@name='region_name']")
+    WebElement fieldAutofillingForm;
+
+
     public MainPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
     }
@@ -16,71 +40,72 @@ public class MainPage extends BaseActions {
 
     public void clickJoinTodayButton() {
         Reports.log("Click JoinToday button");
-        WebElement linkJoinToday = driver.findElement(Locators.LINK_JOIN_TODAY);
+        WebElement linkJoinToday = buttonJoinToday;
         linkJoinToday.click();
     }
+
 
     public void firstPartOfRegistration(String email, String password) {
         Reports.log("Wait visibility of Email field");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.TEXT_EMAIL)));
+        wait.until(ExpectedConditions.visibilityOf(fieldEmail));
 
         Reports.log("Type Email in text field : " + email);
-        driver.findElement(Locators.TEXT_EMAIL).sendKeys(email);
+        fieldEmail.sendKeys(email);
 
         Reports.log("Wait visibility of Password field");
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.TEXT_PASSWORD)));
+        wait.until(ExpectedConditions.visibilityOf(fieldPassword));
 
         Reports.log("Type Password  in field : " + password);
-        driver.findElement(Locators.TEXT_PASSWORD).sendKeys(password);
+        fieldPassword.sendKeys(password);
 
     }
 
     public void clickButtonNext() {
         Reports.log("Wait Next button");
-        wait.until(ExpectedConditions.elementToBeClickable(Locators.BUTTON_NEXT));
+        wait.until(ExpectedConditions.elementToBeClickable(buttonNext));
 
         Reports.log("Click Next button");
-        driver.findElement(Locators.BUTTON_NEXT).click();
+        buttonNext.click();
     }
 
     public void secondPartOfRegistration(String username, String month, String day, String year, String phone, String town, String location) {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         Reports.log("Type username: " + username);
-        driver.findElement(Locators.TEXT_USERNAME).sendKeys(username);
+        fieldNickname.sendKeys(username);
 
         Reports.log("Click list of days");
-        driver.findElement(Locators.SELECT_DAY).click();
+        fieldDay.click();
 
         Reports.log("Select specific day: " + day);
         clickValueOfList(Locators.SELECT_DAY_NUMBER, day);
 
         Reports.log("Click list of months");
-        driver.findElement(Locators.SELECT_MONTH).click();
+        fieldMonth.click();
 
         Reports.log("Select specific month: " + month);
         clickValueOfList(Locators.SELECT_MONTH_NAME, month);
 
         Reports.log("Click list of years");
-        driver.findElement(Locators.SELECT_YEAR).click();
+        fieldYear.click();
 
         Reports.log("Select specific month: " + year);
         clickValueOfList(Locators.SELECT_YEAR_NUMBER, year);
 
         Reports.log("Wait for phone field");
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.TEXT_PHONE)));
+        wait.until(ExpectedConditions.visibilityOf(fieldPhone));
 
         Reports.log("Type phone number: " + phone);
-        driver.findElement(Locators.TEXT_PHONE).sendKeys(phone);
+        fieldPhone.sendKeys(phone);
 
         Reports.log("Clean location autofilling form");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.findElement(Locators.AUTOFILLING_FORM_LOCATION).clear();
+        fieldAutofillingForm.clear();
 
         Reports.log("Type any of town: " + town);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.findElement(Locators.AUTOFILLING_FORM_LOCATION).sendKeys(town);
+        fieldAutofillingForm.sendKeys(town);
 
         clickValueOfList(Locators.LIST_VALUE_LOCATION, location);
     }
@@ -109,6 +134,15 @@ public class MainPage extends BaseActions {
     public void clickSingInPageLink() {
         WebElement buttonSingIn = driver.findElement(Locators.LINK_SIGN_IN);
         buttonSingIn.click();
+    }
+
+    public void sendKeysPassword(String password,boolean requirement){
+        driver.findElement(Locators.SIGN_IN_EMAIL).sendKeys(Data.email1);
+        driver.findElement(Locators.SIGN_IN_PASSWORD).sendKeys(password);
+        driver.findElement(Locators.BUTTON_SING_IN).click();
+        if(!requirement){
+            Assert.assertTrue(driver.findElement(Locators.TEXT_ERROR_MESSAGE).isDisplayed());
+        }
     }
 
     public void sendKeysEmailAndPassword(String email, String password) {

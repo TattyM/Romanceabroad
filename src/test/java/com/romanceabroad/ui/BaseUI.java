@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
@@ -137,6 +138,9 @@ public class BaseUI {
         userProfilePage = new UserProfilePage(driver, wait);
         //driver.manage().window().maximize();
         driver.get(mainUrl);
+
+        PageFactory.initElements(driver,mainPage);
+
         if(env.contains("qa")){
             driver.get(mainUrl);
         }else if(env.contains("uat")){
@@ -154,6 +158,6 @@ public class BaseUI {
         }
         Reports.stop();
 
-        //driver.quit();
+        driver.quit();
     }
 }

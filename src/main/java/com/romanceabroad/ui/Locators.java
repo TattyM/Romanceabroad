@@ -41,17 +41,17 @@ public class Locators {
 
     //JoinToday
     public static final By LINK_JOIN_TODAY = By.xpath("//a[(text()='JOIN TODAY!')]");
-    public static final By TEXT_EMAIL = By.cssSelector("input#email");
-    public static final By TEXT_PASSWORD = By.cssSelector("input#password");
-    public static final By TEXT_USERNAME = By.cssSelector("input#nickname");
+    public static final By TEXT_EMAIL = By.cssSelector("//input[@id='email']");
+    public static final By TEXT_PASSWORD = By.cssSelector("//input[@id='password']");
+    public static final By TEXT_USERNAME = By.cssSelector("//input[@id='nickname']");
     public static final By TEXT_TOOLTIP = By.xpath("//div[@class='tooltip']");
-    public static final By TEXT_PHONE = By.cssSelector("input[name='data[phone]']");
-    public static final By BUTTON_NEXT = By.xpath("//button[@data-action='next-page'][text()='Next']");
-    public static final By SELECT_DAY = By.cssSelector("#daySelect");
+    public static final By TEXT_PHONE = By.cssSelector("//input[@type='text'][@name='data[phone]']");
+    public static final By BUTTON_NEXT = By.xpath("//button[@type='button'][normalize-space()='Next']");
+    public static final By SELECT_DAY = By.cssSelector("//div[@id='daySelect']//a[@class='btn btn-default dropdown-toggle btn-lg btn-block']");
     public static final By SELECT_DAY_NUMBER = By.xpath("//li[@data-handler='selectDay']");
-    public static final By SELECT_MONTH = By.cssSelector("#monthSelect");
+    public static final By SELECT_MONTH = By.cssSelector("//div[@id='monthSelect']//a[@class='btn btn-default dropdown-toggle btn-lg btn-block']");
     public static final By SELECT_MONTH_NAME = By.xpath("//li[@data-handler='selectMonth']");
-    public static final By SELECT_YEAR = By.cssSelector("#yearSelect");
+    public static final By SELECT_YEAR = By.cssSelector("//div[@id='yearSelect']//a[@class='btn btn-default dropdown-toggle btn-lg btn-block']");
     public static final By SELECT_YEAR_NUMBER = By.xpath("//li[@data-handler='selectYear']");
     public static final By AUTOFILLING_FORM_LOCATION = By.xpath("//input[@name='region_name']");
     public static final By LIST_VALUE_LOCATION = By.xpath("//div[@class='dropdown dropdown_location']//ul//li");
