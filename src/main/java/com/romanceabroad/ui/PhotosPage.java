@@ -15,12 +15,12 @@ public class PhotosPage extends BaseActions {
         super(driver, wait);
     }
 
-    public void selectLanguageButton() {
-        WebElement buttonРусский = driver.findElement(Locators.BUTTON_РУССКИЙ);
-        buttonРусский.click();
-        System.out.println("---Language has changed successfully!---");
+//    public void selectLanguageButton() {
+//        WebElement buttonРусский = driver.findElement(Locators.BUTTON_РУССКИЙ);
+//        buttonРусский.click();
+//        System.out.println("---Language has changed successfully!---");
     }
 
 
 
-}
+

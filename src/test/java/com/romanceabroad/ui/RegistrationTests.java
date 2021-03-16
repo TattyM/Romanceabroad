@@ -25,14 +25,14 @@ public class RegistrationTests extends BaseUI {
         }
     }
 
-//    @Test(dataProvider = "JoinToday2", dataProviderClass = DataProviders.class, priority = 2, enabled = isTest15, groups = {"ie"})
-//    public void testRegistration2(String email, String password, String day, String month, String year, String phone, String town, String location) {
-//        mainPage.ajaxScroll(driver.findElement(Locators.LINK_JOIN_TODAY));
-//        mainPage.clickJoinTodayButton();
-//        mainPage.firstPartOfRegistration(email, password);
-//        mainPage.clickButtonNext();
-//        mainPage.secondPartOfRegistration(mainPage.generateNewNumber(Data.username, 3), month, day, year, phone, town, location);
-//        mainPage.clickUnselectedCheckbox(Locators.CHECKBOX_CONFIRM);
-//    }
+    @Test(dataProvider = "JoinToday2", dataProviderClass = DataProviders.class, priority = 2, enabled = isTest15, groups = {"ie"})
+    public void testRegistration2(String email, String password, String day, String month, String year, String phone, String town, String location) {
+        mainPage.ajaxScroll(driver.findElement(Locators.LINK_JOIN_TODAY));
+        mainPage.clickJoinTodayButton();
+        mainPage.firstPartOfRegistration(email, password);
+        mainPage.clickButtonNext();
+        mainPage.secondPartOfRegistration(mainPage.generateNewNumber(Data.username, 3), month, day, year, phone, town, location);
+        mainPage.clickUnselectedCheckbox(Locators.CHECKBOX_CONFIRM);
+    }
 }
 

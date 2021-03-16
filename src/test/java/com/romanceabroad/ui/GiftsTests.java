@@ -1,13 +1,10 @@
 package com.romanceabroad.ui;
-
-import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
 
 public class GiftsTests extends BaseUI {
-    public static final boolean isTest2 = false;
+    public static final boolean isTest2 = true;
     public static final boolean isTest3 = true;
 
 
@@ -23,7 +20,7 @@ public class GiftsTests extends BaseUI {
         Reports.log("Text" + inputsearch);
         mainPage.ajaxSendKeys(driver.findElement(Locators.LINK_TEXT_FIELD), inputsearch);
         giftsPage.clickButtonSearch();
-       //mainPage.verifyLinkActive(Data.expectedUrlTeddy);
+        //mainPage.verifyLinkActive(Data.expectedUrlTeddy);
         System.out.println(inputsearch);
     }
 

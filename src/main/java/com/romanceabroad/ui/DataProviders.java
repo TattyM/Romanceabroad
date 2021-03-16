@@ -31,40 +31,41 @@ public class DataProviders {
     @DataProvider(name = "Search")
     public static Object[][] testSearchInputs() {
         return new Object[][]{
-                {"18", "80", "Default"},
-                {"25", "26", "Name"},
-                {"40", "65", "Views"},
-                {"37", "79", "Registration date"},
+                //{"18", "80", "Default"},
+                //{"25", "26", "Name"},
+                  {"40", "45", "Views"},
+                //{"37", "79", "Registration date"},
         };
     }
 
     @DataProvider(name = "PasswordExamples")
     public static Object[][] testPassword() {
         return new Object[][]{
-                {"LOVEFOREWER123!",true},  //at least 10 characters
-                {"LOVEFOREWERTa6@",true},  //at least 1 digits
-                {"Comehome2melove]",true}, //at least 1 special character
-                {"Loveforewer12%",true},   //at least 1 uppercase
-                {"chupakabr^^^A8",false},  //special character not allowed
-                {"wow999999",false},       //less than 10 char
-                {"summer####",false},      //no digits
-                {"Summer  2021",false},    //no spaces
-                {"******",false},          //char and digits not included
-                {"KittyCat12345",false},   //no number sequences of 4 or more numbers
-                {"TTTTTats000",false},     //no char repeated more than 4 times
-                {"Money@yahoo.com",false},  //no email included
-                {"Tetiana111---",false},     //no user firstname contains
-                {"Moshkovska2$$$$",false},    //no user lastname contains
-                {"Lifelover2021$$$$$$",true},
-                {"ILOVEMONEY$$$$$98",true},
+                {"LOVEFOREWER123!", true},  //at least 10 characters
+                {"LOVEFOREWERTa6@", true},  //at least 1 digits
+                {"Comehome2melove]", true}, //at least 1 special character
+                {"Loveforewer12%", true},   //at least 1 uppercase
+                {"chupakabr^^^A8", false},  //special character not allowed
+                {"wow999999", false},       //less than 10 char
+                {"summer####", false},      //no digits
+                {"Summer  2021", false},    //no spaces
+                {"******", false},          //char and digits not included
+                {"KittyCat12345", false},   //no number sequences of 4 or more numbers
+                {"TTTTTats000", false},     //no char repeated more than 4 times
+                {"Money@yahoo.com", false},  //no email included
+                {"Tetiana111---", false},     //no user firstname contains
+                {"Moshkovska2$$$$", false},    //no user lastname contains
+                {"Lifelover2021$$$$$$", true},
+                {"ILOVEMONEY$$$$$98", true},
 
 
         };
     }
+
     @DataProvider(name = "ContactUsForm")
     public static Object[][] testFormFooter() {
         return new Object[][]{
-                {Data.reason2, Data.name, Data.email1,Data.select,Data.message,Data.code},
+                {Data.reason2, Data.name, Data.email1, Data.select, Data.message, Data.code},
 
         };
     }

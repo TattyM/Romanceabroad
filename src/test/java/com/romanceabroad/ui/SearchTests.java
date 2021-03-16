@@ -3,8 +3,8 @@ package com.romanceabroad.ui;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.util.List;
+
 
 public class SearchTests extends BaseUI {
     public static final boolean isTest16 = true;
@@ -56,38 +56,40 @@ public class SearchTests extends BaseUI {
         }
     }
 
-    @Test(dataProvider = "Search", dataProviderClass = DataProviders.class, priority = 3, enabled = isTest18, groups = {"ie"})
-    public void searchDifferentResults2(String minAge, String maxAge, String sortBy) {
-        int min = Integer.parseInt(minAge);
-        int max = Integer.parseInt(maxAge);
-
-        searchPage.clickPrettyWomenLink();
-        searchPage.getDropDownListByText(driver.findElement(Locators.MIN_AGE_DROPDOWN_LIST), minAge);
-        searchPage.getDropDownListByText(driver.findElement(Locators.MAX_AGE_DROPDOWN_LIST), maxAge);
-        searchPage.getDropDownListByText(driver.findElement(Locators.DROP_DOWN_SORT_BY), sortBy);
-        searchPage.selectButtonNext();
-
-        List<WebElement> infoAboutUser = driver.findElements(Locators.TEXT_INFO_USER);
-        for (int i = 0; i < infoAboutUser.size(); i++) {
-            if (i % 2 == 0) {
-                WebElement text = infoAboutUser.get(i);
-                String info = text.getText();
-                String[] splitedPhrase = info.split(", ");
-                String age = splitedPhrase[1];
-                int ageNumber = Integer.parseInt(age);
-
-                if (min <= ageNumber || ageNumber <= max) {
-                    System.out.println("This age: " + ageNumber + " is correct");
-                } else {
-                    Assert.fail("Wrong age: " + ageNumber);
-                }
-            }
-
-            mainPage.javaWaitSec(3);
-            infoAboutUser = driver.findElements(Locators.TEXT_INFO_USER);
-
-        }
+//    @Test(dataProvider = "Search", dataProviderClass = DataProviders.class, priority = 3, enabled = isTest18, groups = {"ie"})
+//    public void searchDifferentResults2(String minAge, String maxAge, String sortBy) {
+//        int min = Integer.parseInt(minAge);
+//        int max = Integer.parseInt(maxAge);
+//
+//        searchPage.clickPrettyWomenLink();
+//        searchPage.getDropDownListByText(driver.findElement(Locators.MIN_AGE_DROPDOWN_LIST), minAge);
+//        searchPage.getDropDownListByText(driver.findElement(Locators.MAX_AGE_DROPDOWN_LIST), maxAge);
+//        searchPage.getDropDownListByText(driver.findElement(Locators.DROP_DOWN_SORT_BY), sortBy);
+//        searchPage.selectButtonNext();
+//
+//        List<WebElement> infoAboutUser = driver.findElements(Locators.TEXT_INFO_USER);
+//        System.out.println(infoAboutUser.size());
+//        for (int i = 0; i < infoAboutUser.size(); i++) {
+//            if (i % 2 == 0) {
+//                WebElement text = infoAboutUser.get(i);
+//                String info = text.getText();
+//                String[] splitedPhrase = info.split(", ");
+//                String age = splitedPhrase[1];
+//                int ageNumber = Integer.parseInt(age);
+//                if (min <= ageNumber || ageNumber <= max) {
+//                    System.out.println("This age: " + ageNumber + " is correct");
+//                } else {
+//                    Assert.fail("Wrong age: " + ageNumber);
+//                }
+//            }
+//
+//            mainPage.javaWaitSec(3);
+//            infoAboutUser = driver.findElements(Locators.TEXT_INFO_USER);
+//
+//        }
     }
-}
+
+
+
 
 

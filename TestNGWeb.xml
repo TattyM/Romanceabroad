@@ -22,7 +22,7 @@
             <!--            <class name="com.romanceabroad.ui.LoopMainTests"/>-->
             <!--            <class name="com.romanceabroad.ui.MainTests"/>-->
             <!--            <class name="com.romanceabroad.ui.PhotosTests"/>-->
-            <class name="com.romanceabroad.ui.ContactUsTests"/>
+            <class name="com.romanceabroad.ui.RegistrationTests"/>
             <!--            <class name="com.romanceabroad.ui.SearchTests"/>-->
             <!--            <class name="com.romanceabroad.ui.SingInTests"/>-->
             <!--            <class name="com.romanceabroad.ui.UserProfileTests"/>-->

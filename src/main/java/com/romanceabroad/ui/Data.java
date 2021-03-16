@@ -10,6 +10,7 @@ public class Data {
     public static final String views = "Views count";
     public static final String element = "//style";
     public static final String attribute = "//img";
+    public static final String phone1 = "iPhone X";
 
     //SingIn
     public static final String expectedUrlSingIn = "https://romanceabroad.com/users/login_form";

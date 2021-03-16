@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class MainTests extends BaseUI {
     public static final boolean isTest9 = true;
     public static final boolean isTest10 = true;
-    public static final boolean isTest11 = false;
+    public static final boolean isTest11 = true;
     public static final boolean isTest19 = true;
 
 
@@ -75,7 +75,7 @@ public class MainTests extends BaseUI {
             } else {
                 link.click();
                 titleOfArticle = blogPage.getAnyTitle();
-                mainPage.javaWaitSec(3);
+                mainPage.javaWaitSec(5);
                 Assert.assertEquals(nameOfArticle, titleOfArticle);
                 linksOfArticles = blogPage.collectAllLinksOfArticles();
             }

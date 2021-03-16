@@ -55,7 +55,6 @@ public class FooterTabsTests extends BaseUI {
                 actualTitle = mainPage.getAnyTitle();
                 Assert.assertEquals(actualTitle, Data.expectedTitleTerms);
                 Assert.assertTrue(driver.findElement(Locators.PHOTOS_BLOCK).isDisplayed());
-                photosPage.selectLanguageButton();
             } else if (i == 6) {
                 mainPage.javaWaitSec(3);
                 currentUrl = driver.getCurrentUrl();

@@ -63,7 +63,7 @@ public class Locators {
     public static final By MAX_AGE_DROPDOWN_LIST = By.xpath("//select[@id='age_max']");
     public static final By BUTTON_SEARCH = By.cssSelector("input#main_search_button_user_advanced");
     public static final By DROP_DOWN_SORT_BY = By.xpath("//div[@class='form-inline']//select");
-    public static final By TEXT_INFO_USER = By.xpath("//div[@class='text-overflow']");
+    public static final By TEXT_INFO_USER = By.xpath("//div[@class='text-overflow']//a[@class='g-users-gallery__name']");
 
     //PhotosPage
     public static final By MOBILE_MENU = By.xpath("//span[@class='navbar-toggler-icon']");
@@ -72,7 +72,7 @@ public class Locators {
     public static final By BUTTON_РУССКИЙ = By.xpath("//a[contains(text(),'Русский')]");
     public static final By LINK_TAB_USER_PROFILE = By.xpath("//ul[@id='gallery_filters']//a");
     public static final By TEXT_BLOCK = By.xpath("//div[@class='g-flatty-block']");
-    public static final By BLOCK_PICTURES = By.xpath("//span[@data-click='album']");
+    public static final By BLOCK_PICTURES = By.xpath("//div[@class='pre-main-inner-content']");
 
     //BlogPage
     public static final By LINK_BLOG = By.xpath("//a[contains(text(),'BLOG')]");
@@ -103,6 +103,8 @@ public class Locators {
     public static final By INPUT_YEAR = By.cssSelector("select[placeholder='Year']");
     public static final By SELECT_CHECKBOX = By.cssSelector("input[type='checkbox']");
     public static final By INPUT_SUBMIT = By.cssSelector("button[type='submit']");
+    public static final By EMAIL_FIELD = By.xpath("//div//input[@id='email'][@class='form-control']");
+    public static final By PASSWORD_FIELD = By.xpath("//div//input[@id='password'][@class='form-control']");
 
 
     // ConditionsArrayListsLoopsTestsExtended
@@ -128,7 +130,7 @@ public class Locators {
     public static final By LINK_PHOTOS_GIRLS = By.xpath("//img[@src='https://romanceabroad.com/uploads/info-page-logo/0/0/0/25/big-9aff795b78.jpg']");
     public static final By LINK_TEXT_TITLE = By.xpath("//strong[contains(text(),'Old-fashioned')]");
     public static final By LINK_SIGN_IN = By.xpath("//a[@id='ajax_login_link']");
-    public static final By BLOCK_TITLE = By.xpath("//div[contains(text(),'People found: 71')]");
+    public static final By BLOCK_TITLE = By.xpath("//div[@class='lh30']");
     public static final By DROPDOWN_LIST = By.xpath(" //select[@id='sorter-select-9384']");
     public static final By PAGE_FOOTER = By.xpath("//div[@id='footer-menu-title-2']");
 

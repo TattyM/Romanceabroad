@@ -9,7 +9,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -103,7 +102,7 @@ public class BaseUI {
                 switch (testBrowser) {
                     case CHROME:
                         Map<String, String> mobileEmulation = new HashMap<String, String>();
-                        mobileEmulation.put("deviceName", "Moto G4");
+                        mobileEmulation.put("deviceName", Data.phone1);
                         ChromeOptions chromeOptions = new ChromeOptions();
                         chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
 
@@ -136,7 +135,7 @@ public class BaseUI {
         photosPage = new PhotosPage(driver, wait);
         contactUsPage = new ContactUsPage(driver, wait);
         userProfilePage = new UserProfilePage(driver, wait);
-        //driver.manage().window().maximize();
+        driver.manage().window().maximize();
         driver.get(mainUrl);
 
         PageFactory.initElements(driver,mainPage);
@@ -158,6 +157,6 @@ public class BaseUI {
         }
         Reports.stop();
 
-        driver.quit();
+       // driver.quit();
     }
 }

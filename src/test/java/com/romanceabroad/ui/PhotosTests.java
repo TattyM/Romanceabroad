@@ -32,9 +32,7 @@ public class PhotosTests extends BaseUI {
         String currentUrlPhotos = driver.getCurrentUrl();
         Assert.assertEquals(currentUrlPhotos, Data.expectedUrlPhotos);
         mainPage.perfomClick(driver.findElement(Locators.BUTTON_ALBUMS));
-        mainPage.javaWaitSec(3);
-        photosPage.selectLanguageButton();
-        System.out.println(" Язык страницы - Русский !");
+
     }
 
     @Test(priority = 3, enabled = isTest19, groups = {"ie"})

@@ -1,5 +1,6 @@
 package com.romanceabroad.ui;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -162,9 +163,10 @@ public class MainPage extends BaseActions {
 
     public void testSingInForm() {
         driver.findElement(Locators.LINK_LOGIN_FORM).click();
-        driver.findElement(Locators.TEXT_EMAIL).sendKeys(Data.email2);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        driver.findElement(Locators.TEXT_PASSWORD).sendKeys(Data.password);
+        driver.findElement(Locators.EMAIL_FIELD).sendKeys(Data.email2);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.findElement(Locators.PASSWORD_FIELD).sendKeys(Data.password);
         driver.findElement(Locators.SING_IN_BUTTON).click();
         WebElement errorAlert = driver.findElement(Locators.TEXT_ERROR_MESSAGE);
         if (errorAlert.isDisplayed()) {
@@ -218,7 +220,8 @@ public class MainPage extends BaseActions {
     }
 
     public void clickMobileMenu3() {
-        if (driver.findElements(Locators.MOBILE_MENU).size() > 0) {
+        if (driver.findElements(Locators.MOBILE_MENU).size() > 1) {
+            driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
             driver.findElement(Locators.MOBILE_MENU).click();
         }
     }
