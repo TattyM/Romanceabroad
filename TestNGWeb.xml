@@ -3,9 +3,9 @@
 <suite name="TestSuite" parallel="none">
 
     <test name="Chrome Tests Cases">
-        <parameter name="testEnv" value="uat"/>
+        <parameter name="testEnv" value="qa"/>
         <parameter name="testBox" value="web"/>
-        <parameter name="version" value="87.0"/>
+        <parameter name="version" value="89.0"/>
         <parameter name="browser" value="chrome"/>
         <parameter name="platform" value="Windows 10"/>
         <!--        <groups>-->
@@ -16,42 +16,42 @@
         <!--            </run>-->
         <!--        </groups>-->
         <classes>
-            <!--            <class name="com.romanceabroad.ui.ContactUsTests"/>-->
-            <!--            <class name="com.romanceabroad.ui.FooterTabsTests"/>-->
-            <!--            <class name="com.romanceabroad.ui.GiftsTests"/>-->
-            <!--            <class name="com.romanceabroad.ui.LoopMainTests"/>-->
-            <!--            <class name="com.romanceabroad.ui.MainTests"/>-->
-            <!--            <class name="com.romanceabroad.ui.PhotosTests"/>-->
+            <class name="com.romanceabroad.ui.ContactUsTests"/>
+            <class name="com.romanceabroad.ui.FooterTabsTests"/>
+            <class name="com.romanceabroad.ui.GiftsTests"/>
+            <class name="com.romanceabroad.ui.LoopMainTests"/>
+            <class name="com.romanceabroad.ui.MainTests"/>
+            <class name="com.romanceabroad.ui.PhotosTests"/>
             <class name="com.romanceabroad.ui.RegistrationTests"/>
-            <!--            <class name="com.romanceabroad.ui.SearchTests"/>-->
-            <!--            <class name="com.romanceabroad.ui.SingInTests"/>-->
-            <!--            <class name="com.romanceabroad.ui.UserProfileTests"/>-->
-            <!--<methods>
-                <include name=".*HowWeWork.*"/>
-                <include name=".*Women.*"/>
-                <exclude name=".*Search.*"/>
-            </methods>-->
+            <class name="com.romanceabroad.ui.SearchTests"/>
+            <class name="com.romanceabroad.ui.SingInTests"/>
+            <class name="com.romanceabroad.ui.UserProfileTests"/>
+
+<!--                <include name=".*HowWeWork.*"/>-->
+<!--                <include name=".*Women.*"/>-->
+<!--                <exclude name=".*Search.*"/>-->
+<!--            </methods>&ndash;&gt;-->
         </classes>
     </test>
 
-<!--    <test name="Firefox Tests Cases">-->
-<!--        <parameter name="testBox" value="web"/>-->
-<!--        <parameter name="version" value="64.0"/>-->
-<!--        <parameter name="browser" value="Firefox"/>-->
-<!--        <parameter name="platform" value="macOS 10.15"/>-->
-<!--        <classes>-->
-<!--            <class name="com.romanceabroad.ui.ContactUsTests"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <!--    <test name="Firefox Tests Cases">-->
+    <!--        <parameter name="testBox" value="web"/>-->
+    <!--        <parameter name="version" value="64.0"/>-->
+    <!--        <parameter name="browser" value="Firefox"/>-->
+    <!--        <parameter name="platform" value="macOS 10.15"/>-->
+    <!--        <classes>-->
+    <!--            <class name="com.romanceabroad.ui.ContactUsTests"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
-<!--    <test name="IE Tests Cases">-->
-<!--        <parameter name="testBox" value="web"/>-->
-<!--        <parameter name="version" value="11.0"/>-->
-<!--        <parameter name="browser" value="ie"/>-->
-<!--        <parameter name="platform" value="Windows 8.1"/>-->
-<!--        <classes>-->
-<!--            <class name="com.romanceabroad.ui.ContactUsTests"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <!--    <test name="IE Tests Cases">-->
+    <!--        <parameter name="testBox" value="web"/>-->
+    <!--        <parameter name="version" value="11.0"/>-->
+    <!--        <parameter name="browser" value="ie"/>-->
+    <!--        <parameter name="platform" value="Windows 8.1"/>-->
+    <!--        <classes>-->
+    <!--            <class name="com.romanceabroad.ui.ContactUsTests"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 </suite>
 

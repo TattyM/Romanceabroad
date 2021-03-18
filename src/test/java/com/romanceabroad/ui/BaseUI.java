@@ -48,10 +48,10 @@ public class BaseUI {
     }
 
     @BeforeMethod(groups = {"user", "admin", "ie"}, alwaysRun = true)
-    @Parameters({"browser", "testBox", "platform", "version", "deviceName","testEnv"})
+    @Parameters({"browser", "testBox", "platform", "version", "deviceName", "testEnv"})
     public void setup(@Optional("chrome") String browser, @Optional("web") String box, @Optional("null") String platform,
                       @Optional("null") String version, @Optional("null") String device,
-                      @Optional("qa")String env, Method method) throws MalformedURLException {
+                      @Optional("qa") String env, Method method) throws MalformedURLException {
         Reports.start(method.getDeclaringClass().getName() + " : " + method.getName());
 
         if (box.equalsIgnoreCase("web")) {
@@ -138,13 +138,13 @@ public class BaseUI {
         driver.manage().window().maximize();
         driver.get(mainUrl);
 
-        PageFactory.initElements(driver,mainPage);
+        PageFactory.initElements(driver, mainPage);
 
-        if(env.contains("qa")){
+        if (env.contains("qa")) {
             driver.get(mainUrl);
-        }else if(env.contains("uat")){
+        } else if (env.contains("uat")) {
             driver.get("https://www.google.com/");
-        }else if(env.contains("prod")){
+        } else if (env.contains("prod")) {
             driver.get("https://www.yahoo.com/");
         }
         valueOfBox = box;
@@ -157,6 +157,6 @@ public class BaseUI {
         }
         Reports.stop();
 
-       // driver.quit();
+        driver.quit();
     }
 }

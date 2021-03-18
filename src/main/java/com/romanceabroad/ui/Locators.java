@@ -67,7 +67,7 @@ public class Locators {
 
     //PhotosPage
     public static final By MOBILE_MENU = By.xpath("//span[@class='navbar-toggler-icon']");
-    public static final By LINK_PHOTOS = By.xpath("//a[@href='https://romanceabroad.com/media/index']");
+    public static final By LINK_PHOTOS = By.xpath("//a[normalize-space()='PHOTOS']");
     public static final By BUTTON_ALBUMS = By.xpath("//a[@href='https://romanceabroad.com/media/albums']");
     public static final By BUTTON_РУССКИЙ = By.xpath("//a[contains(text(),'Русский')]");
     public static final By LINK_TAB_USER_PROFILE = By.xpath("//ul[@id='gallery_filters']//a");
